@@ -4,35 +4,28 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Search</h1>
+  <h2>Enter a GitHub account name to learn their GH-Impact Score</h2>
 
-  <div id="search_box">
-
-  <input id="account_name_query" type="text" name="account_name">
-
-  <a id="search">GO</a>
-
+  <div id="search_box" style="margin-bottom: 1em;">
+    <input id="account_name_query" type="text" name="account_name">
+    <a href="#" id="search" style="cursor:pointer;">Search</a>
   </div>
 
-  <div id="account_name">
-  </div>
+  <div id="masked" style="display: none;">
 
-  <div id="impact_score">
+    <h3>Results</h3>
+
+    <div id="results">
+      <p>
+        GitHub Profile: <span id="account_name"></span>
+      </p>
+      <p>
+        GH-Index: <span id="impact_score"></span>
+      </p>
+    </div>
+
   </div>
 
 </div>
 
-<script type="text/javascript">
-
-var query = function() {
-  var account_name = $("#account_name_query").val();
-  var first_letter = account_name[0];
-  $.getJSON( "data/" + first_letter + ".json", function(data) {
-    $("#account_name").html(account_name);
-    $("#impact_score").html(data[account_name]);
-  });
-}
-
-$("#search").click(query);
-
-</script>
+<script src="gh-impact.js"></script>
