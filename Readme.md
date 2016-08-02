@@ -2,17 +2,17 @@
 
 ## Todo
 
-- [_] hit enter to search
-- [_] put the query in the location history
-- [_] when loaded with location hash, perform search automatically
-- [_] get a domain, probably
-- [_] write about page
-- [_] choose a few interesting defaults and make them clickable
-- [_] focus input in text box
-- [_] able to tab to search button?
-- [_] google analytics
-- [_] density plot of scores to answer question: how do I compare?
-- [_] lowercase all names so case is insensitive
-- [_] error response if name not found
-- [_] use github API to retrieve other details about the user
-- [_] bigger search box
+- [ ] hit enter to search
+- [ ] put the query in the location history
+- [ ] when loaded with location hash, perform search automatically
+- [ ] get a domain, probably
+- [ ] write about page
+- [ ] choose a few interesting defaults and make them clickable
+- [ ] focus input in text box
+- [ ] able to tab to search button?
+- [ ] google analytics
+- [ ] density plot of scores to answer question: how do I compare?
+- [ ] lowercase all names so case is insensitive
+- [ ] error response if name not found
+- [ ] use github API to retrieve other details about the user
+- [ ] bigger search box
