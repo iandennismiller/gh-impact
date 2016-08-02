@@ -4,20 +4,35 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <h1 class="page-heading">Search</h1>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <div id="search_box">
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+  <input id="account_name_query" type="text" name="account_name">
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <a id="search">GO</a>
+
+  </div>
+
+  <div id="account_name">
+  </div>
+
+  <div id="impact_score">
+  </div>
 
 </div>
+
+<script type="text/javascript">
+
+var query = function() {
+  var account_name = $("#account_name_query").val();
+  var first_letter = account_name[0];
+  $.getJSON( "data/" + first_letter + ".json", function(data) {
+    $("#account_name").html(account_name);
+    $("#impact_score").html(data[account_name]);
+  });
+}
+
+$("#search").click(query);
+
+</script>

@@ -7,7 +7,7 @@
 
 # Site settings
 title: gh-impact
-email: iandennismiller@gmail.com
+# email: iandennismiller@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   This project calculates the impact of users on GitHub.
 baseurl: "/gh-impact" # the subpath of your site, e.g. /blog
