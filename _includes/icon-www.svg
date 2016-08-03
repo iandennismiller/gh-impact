@@ -1,17 +1,53 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 287 287" preserveAspectRatio="xMinYMin meet">
-
- <g label="Layer 1" id="imagebot_2">
-  <path label="Layer 1" fill="#AAAAAA" d="M286.921,143.453 C286.921,222.678 222.693,286.906 143.46,286.906 C64.2309,286.906 -2.70626e-06,222.68 -2.70626e-06,143.453 C-2.70626e-06,64.2273 64.2283,9.53014e-06 143.46,9.53014e-06 C222.69,9.53014e-06 286.921,64.2252 286.921,143.453 z" id="imagebot_11"/>
-  <g label="Layer 1" stroke="#ffffff" transform="translate(-0.00198094, 0.0281582) matrix(1, 0, 0, 1, -168.486, -348.196)" id="imagebot_3">
-   <path stroke="#ffffff" stroke-linecap="round" stroke-width="14.992" fill="none" transform="matrix(.94025 0 0 .92745 12.409 42.957)" d="M422.85999,483.79001C422.85999,540.59601 376.16999,586.65001 318.56998,586.65001C260.97498,586.65001 214.27998,540.59901 214.27998,483.79001C214.27998,426.98401 260.96998,380.93001 318.56998,380.93001C376.16499,380.93001 422.85999,426.98101 422.85999,483.79001z" id="imagebot_10"/>
-   <path stroke="#ffffff" stroke-width="14" fill="none" d="M230,442.35999L398,442.35999" id="imagebot_9"/>
-   <path stroke="#ffffff" stroke-width="14" fill="none" d="M228,538.85999L400,538.85999" id="imagebot_8"/>
-   <path stroke="#ffffff" stroke-width="14" fill="none" d="M218,491.35999L406,491.35999" id="imagebot_7"/>
-   <path stroke="#ffffff" stroke-width="14" fill="none" d="M310.25,583.10999L310.25,399.10999" id="imagebot_6"/>
-   <path stroke="#ffffff" stroke-width="14" fill="none" d="M310.25,583.10999C250,562.35999 240,432.35999 310.25,399.10999" id="imagebot_5"/>
-   <path stroke="#ffffff" stroke-width="14" fill="none" d="M310.25,583.10999C380,552.35999 380,432.35999 310.25,399.10999" id="imagebot_4"/>
-  </g>
-  <title>Layer 1</title>
- </g>
- <metadata>image/svg+xmlOpenclipartInternet Icon2010-09-23T04:19:58https://openclipart.org/detail/86401/internet-icon-by-benbenIconinternetworld</metadata>
-</svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   viewBox="0 0 14.17475 14.17475"
+   height="14.17475"
+   width="14.17475"
+   xml:space="preserve"
+   version="1.1"
+   id="svg4244"><metadata
+     id="metadata4250"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+     id="defs4248"><clipPath
+       id="clipPath4258"
+       clipPathUnits="userSpaceOnUse"><path
+         id="path4260"
+         d="m 0,11.34 11.34,0 L 11.34,0 0,0 0,11.34 Z" /></clipPath></defs><g
+     transform="matrix(1.25,0,0,-1.25,0,14.17475)"
+     id="g4252"><g
+       style="stroke:#58928a;stroke-opacity:1"
+       transform="matrix(0.97909434,0.20340668,-0.20340668,0.97909434,1.2718042,-1.0347843)"
+       id="g4254"><g
+         style="stroke:#58928a;stroke-opacity:1"
+         clip-path="url(#clipPath4258)"
+         id="g4256"><g
+           style="stroke:#58928a;stroke-opacity:1"
+           transform="translate(0.563,5.6699)"
+           id="g4262"><path
+             id="path4264"
+             style="fill:none;stroke:#58928a;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             d="m 0,0 c 0,2.82 2.287,5.107 5.107,5.107 2.82,0 5.107,-2.287 5.107,-5.107 0,-2.82 -2.287,-5.107 -5.107,-5.107 C 2.287,-5.107 0,-2.82 0,0 Z" /></g><g
+           style="stroke:#58928a;stroke-opacity:1"
+           transform="translate(8.4111,5.6704)"
+           id="g4266"><path
+             id="path4268"
+             style="fill:none;stroke:#58928a;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             d="m 0,0 c 0,2.819 -1.259,5.106 -2.811,5.106 -1.552,0 -2.811,-2.287 -2.811,-5.106 0,-2.823 1.259,-5.108 2.811,-5.108 C -1.259,-5.108 0,-2.823 0,0 Z" /></g><g
+           style="stroke:#58928a;stroke-opacity:1"
+           transform="translate(5.6699,10.647)"
+           id="g4270"><path
+             id="path4272"
+             style="fill:none;stroke:#58928a;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             d="M 0,0 0,-9.855" /></g><g
+           style="stroke:#58928a;stroke-opacity:1"
+           transform="translate(0.563,5.6699)"
+           id="g4274"><path
+             id="path4276"
+             style="fill:none;stroke:#58928a;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             d="M 0,0 10.214,0" /></g></g></g></g></svg>
