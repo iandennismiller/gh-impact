@@ -51,3 +51,21 @@ $on-laptop:        800px;
         "layout",
         "syntax-highlighting"
 ;
+
+#search_box {
+    margin-bottom: 1em;
+}
+
+#account_name_query {
+    font-size: 3em;
+}
+
+#search {
+    cursor: pointer;
+    font-size: 2em;
+}
+
+#masked {
+    display: none;
+}
+
