@@ -2,6 +2,30 @@
 Ian Dennis Miller
 */
 
+/*
+http://stackoverflow.com/a/1533945/1146681
+*/
+(function($) {
+
+$.fn.randomize = function(childElem) {
+ return this.each(function() {
+ var $this = $(this);
+ var elems = $this.children(childElem);
+
+ elems.sort(function() { return (Math.round(Math.random())-0.5); });
+
+ $this.detach(childElem);
+
+ for(var i=0; i < elems.length; i++)
+ $this.append(elems[i]);
+
+ });
+}
+})(jQuery);
+
+/*
+*/
+
 var query = function() {
     $("#masked").css("display", "block");
     var account_name = $("#account_name_query").val();
@@ -19,23 +43,35 @@ var query = function() {
     });
 }
 
-$(function() {
-    $("#search").removeAttr("href");
-
-    $("#search").click(query);
-
-    $('#account_name_query').keypress(function (e) {
-        if (e.which == 13) {
-            // $('form#login').submit();
-            query();
-            return false;
-        }
-    });
-
+var run_location = function() {
     if (location.hash != "") {
         var q = location.hash;
         q = q.substring(1, location.hash.length);
         $("#account_name_query").val(q);
         query();
     }
+}
+
+var show_examples = function() {
+    $("#examples ul").randomize("li");
+    $("#examples ul li").slice(5, $("#examples ul li").length).remove();
+    $("#examples").css("display", "block");
+}
+
+$(function() {
+    $("#search").removeAttr("href");
+
+    $("#search").click(query);
+
+    $(window).on('hashchange', run_location);
+
+    $('#account_name_query').keypress(function (e) {
+        if (e.which == 13) {
+            query();
+            return false;
+        }
+    });
+
+    run_location();
+    show_examples();
 });
