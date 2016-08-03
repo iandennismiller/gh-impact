@@ -10,11 +10,11 @@ permalink: /about/
 
 One particular index of influence known as the *H-Index* combines the *quantity* and *quality* of an individual's work to create a single number that basically captures the idea of *influence* (Hirsch, 2005).
 
-> A scientist has index *h* if *h* of his/her *Np* papers have at least *h* citations each, and the other *(Np − h)* papers have no more than *h* citations each.
+> A scientist has index **h** if **h** of his/her **Np** papers have at least **h** citations each, and the other **(Np − h)** papers have no more than *h* citations each.
 
 A more direct way to say it comes from [Wikipedia H-Index](https://en.wikipedia.org/wiki/H-index):
 
-> a scholar with an index of *h* has published *h* papers each of which has been cited in other papers at least *h* times.
+> a scholar with an index of **h** has published **h** papers each of which has been cited in other papers at least **h** times.
 
 ## Academia and GitHub
 
