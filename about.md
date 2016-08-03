@@ -38,7 +38,7 @@ Data were imported into Postgres directly from the MySQL dumps. All subsequent c
 
 ## Web Application
 
-[Flask-Diamond](http://flask-diamond.org) was used to model the databases and to export *gh-impact* computation results as JSON.  This dynamic backend was adapted to work with GitHub Pages by batch-exporting all JSON results (~10MB) to the filesystem for static operation.  The search interface is then able to request a JSON file to fulfill a search request without the need for a persistent Python application process.
+[Flask-Diamond](http://flask-diamond.org) was used to model the databases and to export *gh-impact* computation results as JSON.  This dynamic backend was adapted to work with GitHub Pages by batch-exporting all JSON results (~14MB) to the filesystem for static operation.  The search interface is then able to request a JSON file to fulfill a search request without the need for a persistent Python application process.
 
 ## References
 
