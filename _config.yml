@@ -9,7 +9,7 @@
 title: gh-impact
 # email: iandennismiller@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  This project calculates the impact of GitHub users.
+  <b>gh-impact</b> is a measure of influence on GitHub.
 baseurl: "/gh-impact" # the subpath of your site, e.g. /blog
 url: "https://iandennismiller.github.io" # the base hostname & protocol for your site
 twitter_username: iandennismiller

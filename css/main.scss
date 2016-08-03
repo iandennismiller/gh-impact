@@ -52,10 +52,6 @@ $on-laptop:        800px;
         "syntax-highlighting"
 ;
 
-#search_box {
-    margin-bottom: 1em;
-}
-
 #account_name_query {
     font-size: 3em;
 }
@@ -69,3 +65,15 @@ $on-laptop:        800px;
     display: none;
 }
 
+#disclaimer {
+    font-size: 0.8em;
+}
+
+#results {
+    margin-top: 2em;
+}
+
+#results h3 {
+    text-align: center;
+    font-size: 2em;
+}
