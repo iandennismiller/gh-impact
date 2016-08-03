@@ -16,3 +16,4 @@
 - [x] error response if name not found
 - [ ] use github API to retrieve other details about the user
 - [x] bigger search box
+- [ ] put username in title

@@ -59,7 +59,7 @@ var run_location = function() {
 var show_examples = function() {
     $("#examples ul").randomize("li");
     $("#examples ul li").slice(5, $("#examples ul li").length).remove();
-    $("#examples").css("display", "block");
+    $("#examples").slideDown();
 }
 
 $(function() {
