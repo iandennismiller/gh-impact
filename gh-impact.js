@@ -52,6 +52,7 @@ var run_location = function() {
         query();
     }
     else {
+        $("#masked").css("display", "none");
         show_examples();
     }
 }
