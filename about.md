@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Who are the most influential builders on GitHub?  *gh-impact* is a measure of influence on GitHub.
+Who are the most influential builders on GitHub?  *gh-impact* answers that question.  *gh-impact* is a measure of influence on GitHub.
 
 ## Influence
 
