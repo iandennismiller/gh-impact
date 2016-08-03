@@ -79,5 +79,16 @@ $on-laptop:        800px;
 }
 
 #examples {
+    margin-top: 2em;
     display: none;
+}
+
+#examples ul {
+    margin-left: 0;
+}
+
+#examples ul li {
+    display: inline;
+    list-style-type: none;
+    padding-right: 1em;
 }

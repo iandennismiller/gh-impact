@@ -6,8 +6,8 @@
 - [x] put the query in the location history
 - [x] when loaded with location hash, perform search automatically
 - [ ] get a domain, probably
-- [ ] write about page
-- [ ] choose a few interesting defaults and make them clickable
+- [x] write about page
+- [x] choose a few interesting defaults and make them clickable
 - [x] focus input in text box
 - [ ] able to tab to search button?
 - [ ] google analytics

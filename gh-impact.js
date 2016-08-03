@@ -28,6 +28,7 @@ $.fn.randomize = function(childElem) {
 
 var query = function() {
     $("#masked").css("display", "block");
+    $("#examples").css("display", "none");
     var account_name = $("#account_name_query").val();
     var first_letter = account_name[0];
     $.getJSON( "data/" + first_letter + ".json", function(data) {
@@ -49,6 +50,9 @@ var run_location = function() {
         q = q.substring(1, location.hash.length);
         $("#account_name_query").val(q);
         query();
+    }
+    else {
+        show_examples();
     }
 }
 
@@ -73,5 +77,4 @@ $(function() {
     });
 
     run_location();
-    show_examples();
 });
