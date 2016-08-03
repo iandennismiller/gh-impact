@@ -42,6 +42,7 @@ var query = function() {
             $("#impact_score").html("");
         }
     });
+    ga('send', 'pageview');
 }
 
 var run_location = function() {
