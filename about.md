@@ -30,7 +30,7 @@ GitHub *stars* are therefore the best measure of actual project use. On that bas
 
 ## Data Sources
 
-Researchers at [GHTorrent](http://ghtorrent.org) provide MySQL database dumps on a regular basis (Gousios, 2013).  The **2016-07-19** database dump (approximately 41.3GB) was downloaded and the *users* (~13M rows), *projects* (~34M rows), and *watchers* (~49M rows) tables were extracted as CSV files.  The *watchers* table is strangely named - perhaps for some historical reason - because in fact it contains stars rather than watchers.
+Researchers at [GHTorrent](http://ghtorrent.org) provide MySQL database dumps on a regular basis (Gousios, 2013).  The **2016-07-19** database dump (approximately 41.3GB) was downloaded and the *users* (~13M rows), *projects* (~34M rows), and *watchers* (~49M rows) tables were extracted as CSV files.  The *watchers* table is named for historical reasons, but it actually contains stars - not watchers.
 
 ## Computation
 
