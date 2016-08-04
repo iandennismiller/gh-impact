@@ -36,6 +36,7 @@ var query = function() {
             $("#account_name").html("<a target='_blank' href='http://github.com/" + account_name + "'>" + account_name + "</a>");
             $("#impact_score").html(data[account_name]);
             location.hash = account_name;
+            document.title = "gh-impact report: " + account_name;
         }
         else {
             $("#account_name").html("not found");

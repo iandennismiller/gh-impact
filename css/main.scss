@@ -59,6 +59,10 @@ $on-laptop:        800px;
     margin-bottom: 0.3em;
 }
 
+#account_name, #impact_score {
+  font-weight: bold;
+}
+
 #search {
     cursor: pointer;
     font-size: 3em;
@@ -66,10 +70,11 @@ $on-laptop:        800px;
 
 #masked {
     display: none;
+    font-size: 1.5em;
 }
 
 #disclaimer {
-    font-size: 0.8em;
+    font-size: 0.5em;
 }
 
 #results {
