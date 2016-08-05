@@ -27,11 +27,17 @@ $.fn.randomize = function(childElem) {
 */
 
 var query = function() {
+
+    var account_name = $("#account_name_query").val();
+    if ((!account_name) || (account_name == "undefined")) {
+        return(false);
+    }
+
     $("#masked").css("display", "block");
     $("#examples").css("display", "none");
-    var account_name = $("#account_name_query").val();
     var first_letter = account_name[0];
-    $.getJSON( "data/" + first_letter + ".json", function(data) {
+
+    $.getJSON( "data/json/" + first_letter + ".json", function(data) {
         if (data[account_name] != undefined) {
             $("#account_name").html("<a target='_blank' href='http://github.com/" + account_name + "'>" + account_name + "</a>");
             $("#impact_score").html(data[account_name]);
@@ -43,6 +49,7 @@ var query = function() {
             $("#impact_score").html("");
         }
     });
+
     ga('send', 'pageview');
 }
 
@@ -65,6 +72,13 @@ var show_examples = function() {
     $("#examples").slideDown();
 }
 
+var handle_enter = function (e) {
+    if (e.which == 13) {
+        query();
+        return false;
+    }
+}
+
 $(function() {
     $("#search").removeAttr("href");
 
@@ -72,12 +86,8 @@ $(function() {
 
     $(window).on('hashchange', run_location);
 
-    $('#account_name_query').keypress(function (e) {
-        if (e.which == 13) {
-            query();
-            return false;
-        }
-    });
+    $('#account_name_query').keypress(handle_enter);
+    $('#search').keypress(handle_enter);
 
     run_location();
 });

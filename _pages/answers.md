@@ -2,6 +2,7 @@
 layout: page
 title: Q&A
 permalink: /answers.html
+menu: main
 ---
 
 ## What is the significance of knowing somebody's **gh-impact** score?

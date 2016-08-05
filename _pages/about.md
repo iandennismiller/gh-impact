@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about.html
+menu: main
 ---
 
 *gh-impact* is a measure of influence on GitHub.
@@ -46,4 +47,4 @@ Gousios, G. (2013). The GHTorrent dataset and tool suite. In Proceedings of the 
 
 Hirsch, J. E. (2005). An index to quantify an individual’s scientific research output. Proceedings of the National Academy of Sciences of the United States of America, 102(46), 16569–16572.
 
-Linoff, Gordon. (2013). Answer to SQL for computing ... h-index.  Retrieved from http://stackoverflow.com/a/18787390/1146681.
+Linoff, G. (2013). Answer to SQL for computing ... h-index.  Retrieved from http://stackoverflow.com/a/18787390/1146681.

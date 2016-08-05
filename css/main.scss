@@ -73,7 +73,7 @@ $on-laptop:        800px;
     font-size: 1.5em;
 }
 
-#disclaimer {
+#brief {
     font-size: 0.5em;
 }
 
@@ -111,4 +111,9 @@ $on-laptop:        800px;
   border-right: 1px solid #333333;
   border-bottom: 1px solid #333333;
   border-left: 1px solid #CCCCCC;
+}
+
+#content-license {
+  text-align: center;
+  font-size: 0.7em;
 }

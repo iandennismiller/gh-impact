@@ -7,8 +7,8 @@ layout: default
   <h2>Enter a GitHub account name to learn their GH-Impact Score</h2>
 
   <div id="search_box">
-    <input id="account_name_query" type="text" name="account_name" autofocus>
-    <a href="#" id="search" class="button">Search</a>
+    <input id="account_name_query" type="text" name="account_name" tabindex="1" autofocus>
+    <a id="search" class="button" href="#" tabindex="2">Search</a>
   </div>
 
   <div id="masked">
@@ -24,7 +24,7 @@ layout: default
       </p>
     </div>
 
-    <div id="disclaimer">
+    <div id="brief">
       <p>
       What does this number mean? <a href="about.html">Read more about it.</a> Disclaimer: this score is based on a snapshot from 2016-07-19 and it may not reflect current GitHub metrics.
       </p>
