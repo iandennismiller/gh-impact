@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Q&A
-permalink: /answers.html
+permalink: /pages/answers.html
 menu: main
 ---
 
@@ -50,13 +50,3 @@ We suspect the same cross-field comparisons will be dangerous on GitHub, just as
 Are you an academic researcher?  If so, then please get in touch.  I am also looking for post-doctoral research opportunities for Fall 2017.
 
 Are you in the industry?  Premium consulting services are available. DM [@iandennismiller](https://twitter.com/iandennismiller) to set up an initial consultation.
-
-<!-- ## is there a substantial difference between individuals and organizations? -->
-
-<!-- ## is there a relationship between **gh-impact** and number of followers? -->
-
-<!-- ## is there any effect of language upon gh-impact? -->
-
-<!-- ## is **gh-impact** predictive of the popularity of a users's projects? -->
-
-<!-- ## density plot of scores to answer question: how do I compare? -->

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /about.html
+permalink: /pages/about.html
 menu: main
 ---
 

@@ -28,7 +28,7 @@
 
 ## Analytical Questions
 
-- [ ] density plot of scores to answer question: how do I compare?
+- [x] density plot of scores to answer question: how do I compare?
 - [ ] is there a substantial difference between individuals and organizations?
 - [ ] is there a relationship between gh-impact and number of followers?
 - [ ] is there any effect of language upon gh-impact?
