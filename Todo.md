@@ -23,9 +23,10 @@
 - [x] table of contents
 - [x] remove search box from report
 - [x] leader boards
+- [x] google analytics tracks quantity of search queries
 - [ ] lowercase all names so case is insensitive
-- [ ] google analytics tracks additional page loads despite non-reload
 - [ ] Shorten key names in json
+- [ ] split JSON database by hash buckets, not alpha
 
 ## Report Enhancements
 
@@ -37,10 +38,10 @@
 
 - [x] density plot of scores to answer question: how do I compare?
 - [x] is there a substantial difference between individuals and organizations?
+- [x] who/which are the top users and organizations?
 - [ ] is there a relationship between gh-impact and number of followers?
-- [ ] is there any effect of language upon gh-impact?
-- [ ] is gh-impact predictive of the popularity of a users's projects?
-- [ ] who/which are the top users and organizations?
+- [ ] is there any effect of project language upon gh-impact?
+- [ ] is gh-impact predictive of the popularity of an accounts's projects?
 - [ ] does organization size predict impact factor?
 - [ ] does quantity of projects predict impact factor?
 

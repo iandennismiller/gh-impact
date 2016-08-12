@@ -51,7 +51,11 @@ var query = function() {
         }
     });
 
-    ga('send', 'pageview');
+    ga('send', {
+        hitType: 'event',
+        eventCategory: 'search',
+        eventAction: 'query',
+    });
 }
 
 var run_location = function() {
