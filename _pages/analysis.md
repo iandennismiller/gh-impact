@@ -17,7 +17,7 @@ First, be sure to read [these caveats regarding comparison](/answers/#are-gh-imp
 
 Nevertheless, it is easy to see where one score falls on the distribution.  Here is a histogram showing how many accounts have a certain number of stars.
 
-![Histogram](/media/density_plot_over_one-1.png)
+![Histogram](/media/density_plot-1.png)
 
 ### Percentiles
 

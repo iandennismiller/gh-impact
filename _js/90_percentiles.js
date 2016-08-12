@@ -1,5 +1,9 @@
+/*
+Ian Dennis Miller
+*/
+
 var percentiles = [
-    [
+    [ // individuals
         0.0000000,
         0.0000000,
         0.6885959,
@@ -17,7 +21,7 @@ var percentiles = [
         0.9986461,
         0.9989227
     ],
-    [
+    [ // organizations
         0.0000000,
         0.0000000,
         0.6473897,

@@ -35,7 +35,7 @@
 - [x] display account type on report
 - [x] report percentiles corresponding to scores based on a table lookup
 - [x] arrange report as a table or something
-- [ ] percentiles for organizations
+- [x] percentiles for organizations
 - [ ] use github API to retrieve other details about the user
 
 ## Analysis
@@ -43,13 +43,14 @@
 - [x] density plot of scores to answer question: how do I compare?
 - [x] is there a substantial difference between individuals and organizations?
 - [x] who/which are the top users and organizations?
-- [ ] improve aesthetic for plots
-- [ ] ensure all plots have titles and axes are labeled
+- [x] improve aesthetic for plots
+- [x] ensure all plots have titles and axes are labeled
 - [ ] is there a relationship between gh-impact and number of followers?
 - [ ] is there any effect of project language upon gh-impact?
 - [ ] is gh-impact predictive of the popularity of an accounts's projects?
 - [ ] does organization size predict impact factor?
 - [ ] does quantity of projects predict impact factor?
+- [ ] improve pipeline for leaders, percentiles, test results
 
 ## Public Relations
 
@@ -60,4 +61,3 @@
 - [ ] contact mechanism: is Twitter good enough?
 - [ ] register alternate domain names?
 - [ ] submit to HCOMP 2016 before August 15 at 5pm PST
-
