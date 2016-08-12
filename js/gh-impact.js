@@ -6,21 +6,20 @@ Ian Dennis Miller
 http://stackoverflow.com/a/1533945/1146681
 */
 (function($) {
-
 $.fn.randomize = function(childElem) {
- return this.each(function() {
- var $this = $(this);
- var elems = $this.children(childElem);
+        return this.each(function() {
+        var $this = $(this);
+        var elems = $this.children(childElem);
 
- elems.sort(function() { return (Math.round(Math.random())-0.5); });
+        elems.sort(function() { return (Math.round(Math.random())-0.5); });
 
- $this.detach(childElem);
+        $this.detach(childElem);
 
- for(var i=0; i < elems.length; i++)
- $this.append(elems[i]);
+        for(var i=0; i < elems.length; i++)
+        $this.append(elems[i]);
 
- });
-}
+        });
+    }
 })(jQuery);
 
 /*
@@ -35,6 +34,8 @@ var query = function() {
 
     $("#masked").css("display", "block");
     $("#examples").css("display", "none");
+    $("#search_box").css("display", "none");
+
     var first_letter = account_name[0];
 
     $.getJSON( "data/json/" + first_letter + ".json", function(data) {
@@ -62,6 +63,7 @@ var run_location = function() {
     }
     else {
         $("#masked").css("display", "none");
+        $("#search_box").css("display", "block");
         show_examples();
     }
 }

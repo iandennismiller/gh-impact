@@ -63,6 +63,10 @@ $on-laptop:        800px;
   font-weight: bold;
 }
 
+#search_box {
+  display: none;
+}
+
 #search {
     cursor: pointer;
     font-size: 3em;
@@ -75,10 +79,6 @@ $on-laptop:        800px;
 
 #brief {
     font-size: 0.5em;
-}
-
-#results {
-    margin-top: 2em;
 }
 
 #results h3 {
