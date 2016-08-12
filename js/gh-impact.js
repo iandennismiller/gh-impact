@@ -79,6 +79,7 @@ var run_location = function() {
     }
     else {
         $("#masked").css("display", "none");
+        $("#account_name_query").val("");
         $("#search_box").css("display", "block");
         show_examples();
     }
