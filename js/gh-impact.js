@@ -73,7 +73,7 @@ var run_location = function() {
 
         ga('send', {
             hitType: 'event',
-            eventCategory: 'search',
+            eventCategory: 'index',
             eventAction: 'run_location',
         });
     }
@@ -91,7 +91,7 @@ var show_examples = function() {
 
     ga('send', {
         hitType: 'event',
-        eventCategory: 'search',
+        eventCategory: 'index',
         eventAction: 'show_examples',
     });
 }
