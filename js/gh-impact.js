@@ -411,13 +411,14 @@ var query = function() {
         if (account != undefined) {
             console.log(account);
             $("#account_name").html("<a target='_blank' href='http://github.com/" + account["l"] + "'>" + account["l"] + "</a>");
-            $("#impact_score").html(account["s"]);
+            $("#impact_score").html("<a href='http://www.gh-impact.com/#" + account["l"] + "'>" + account["s"] + "</a>");
             if (account["t"] == 1) {
                 $("#account_type").html("Individual");
             }
             else {
                 $("#account_type").html("Organization");
             }
+            show_percentile(account["s"], account["t"]);
             location.hash = account["l"];
             document.title = "gh-impact report: " + account["l"];
 
@@ -438,6 +439,32 @@ var query = function() {
             });
         }
     });
+}
+
+var show_percentile = function(score, account_type) {
+    console.log("score: " + score);
+    console.log("type: " + account_type);
+
+    var percentiles = [
+        [0.0000000, 0.0000000, 0.6829202, 0.8619581, 0.9310143, 0.9617953, 0.9776193, 0.9857905, 0.9903589, 0.9931521],
+        []
+    ];
+
+    var result;
+
+    if (account_type == 1) { // individual
+        if (score < 10) {
+            result = Math.round(percentiles[0][score] * 100);
+        }
+        else {
+            result = 99;
+        }
+    }
+    else { //organziation
+        result = "not scored yet";
+    }
+
+    $("#percentile").html(result);
 }
 
 var run_location = function() {

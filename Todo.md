@@ -28,11 +28,14 @@
 - [x] Shorten key names in json
 - [x] split JSON database by hash buckets, not alpha
 - [x] include account type in json
+- [ ] evaluate https://github.com/jekyll/jekyll-assets
 
 ## Report Enhancements
 
 - [x] display account type on report
-- [ ] report percentiles corresponding to scores based on a table lookup
+- [x] report percentiles corresponding to scores based on a table lookup
+- [ ] percentiles for organizations
+- [ ] arrange report as a table or something
 - [ ] use github API to retrieve other details about the user
 
 ## Analysis
@@ -55,4 +58,4 @@
 - [ ] explanation powerpoint video
 - [ ] promotion: /r/programming, HN, twitter
 - [ ] contact mechanism: is Twitter good enough?
-- [ ] register alternate domain names
+- [ ] register alternate domain names?
