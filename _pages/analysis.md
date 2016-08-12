@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Analysis
-permalink: /pages/analysis.html
+permalink: /analysis/
 menu: main
 ---
 
@@ -11,7 +11,7 @@ The *gh-impact* dataset is currently being explored and results will be posted h
 
 ## How does one score compare to the population?
 
-First, be sure to read [these caveats regarding comparison](/pages/answers.html#are-gh-impact-scores-comparable-between-two-users-or-two-industries), because there are a few reasons why scores might not be directly comparable.
+First, be sure to read [these caveats regarding comparison](/answers/#are-gh-impact-scores-comparable-between-two-users-or-two-industries), because there are a few reasons why scores might not be directly comparable.
 
 Nevertheless, it is easy to see where one score falls on the distribution.  Here is a histogram showing how many accounts have a certain number of stars.
 

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Website License
-permalink: /pages/website-license.html
+permalink: /licenses/website-license.html
 ---
 
 www.gh-impact.com is released with the Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) License.

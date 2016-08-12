@@ -1,13 +1,13 @@
 ---
 layout: page
 title: Q&A
-permalink: /pages/answers.html
+permalink: /answers/
 menu: main
 ---
 
 ## What is the significance of knowing somebody's **gh-impact** score?
 
-*gh-impact* can provide a rough estimate of a GitHub account's overall productivity and influence.  There may be circumstances under which *gh-impact* is useful for making comparisons, but this is an area of ongoing research and it is generally not advised.  You can [read more about the project](about.html) on this site.
+*gh-impact* can provide a rough estimate of a GitHub account's overall productivity and influence.  There may be circumstances under which *gh-impact* is useful for making comparisons, but this is an area of ongoing research and it is generally not advised.  You can [read more about the project](/about/) on this site.
 
 ## What about users who star their own projects?
 

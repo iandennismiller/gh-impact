@@ -2,10 +2,10 @@
 
 [http://www.gh-impact.com](http://www.gh-impact.com)
 
-- [about](http://www.gh-impact.com/pages/about.html)
-- [analysis](http://www.gh-impact.com/pages/analysis.html)
-- [questions/answers](http://www.gh-impact.com/pages/answers.html)
-- [blog](http://www.gh-impact.com/blog.html)
+- [about](http://www.gh-impact.com/about/)
+- [analysis](http://www.gh-impact.com/analysis/)
+- [questions/answers](http://www.gh-impact.com/answers/)
+- [blog](http://www.gh-impact.com/blog/)
 
 ## Credits
 

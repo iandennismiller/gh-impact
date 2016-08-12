@@ -3,7 +3,6 @@
 - [x] hit enter to search
 - [x] put the query in the location history
 - [x] when loaded with location hash, perform search automatically
-- [x] get a domain, probably
 - [x] write about page
 - [x] choose a few interesting defaults and make them clickable
 - [x] focus input in text box
@@ -17,12 +16,15 @@
 - [x] need favicon
 - [x] logo? basically...
 - [x] add organizations
+- [x] pages should be simple URLs: /about, etc
 - [ ] lowercase all names so case is insensitive
-- [ ] use github API to retrieve other details about the user
+- [ ] enhance Report: use github API to retrieve other details about the user
 - [ ] leader boards, basically
-- [ ] write blog post about this
-- [ ] explanation powerpoint video
 - [ ] google analytics tracks additional page loads despite non-reload
+- [ ] Shorten key names in json
+- [ ] include account type in json and display in report
+- [ ] remove search box from report
+- [ ] consolidate about and move items to answers
 
 # Analytical Questions
 
@@ -34,3 +36,12 @@
 - [ ] who/which are the top users and organizations?
 - [ ] does organization size predict impact factor?
 - [ ] does quantity of projects predict impact factor?
+
+# Public Relations
+
+- [x] get a domain, probably
+- [ ] write blog post about this on academic blog
+- [ ] explanation powerpoint video
+- [ ] promotion: /r/programming, HN, twitter
+- [ ] contact mechanism: is Twitter good enough?
+- [ ] register alternate domain names
