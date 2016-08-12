@@ -43,13 +43,13 @@
 - [x] density plot of scores to answer question: how do I compare?
 - [x] is there a substantial difference between individuals and organizations?
 - [x] who/which are the top users and organizations?
+- [ ] improve aesthetic for plots
+- [ ] ensure all plots have titles and axes are labeled
 - [ ] is there a relationship between gh-impact and number of followers?
 - [ ] is there any effect of project language upon gh-impact?
 - [ ] is gh-impact predictive of the popularity of an accounts's projects?
 - [ ] does organization size predict impact factor?
 - [ ] does quantity of projects predict impact factor?
-- [ ] improve aesthetic for plots
-- [ ] ensure all plots have titles and axes are labeled
 
 ## Public Relations
 

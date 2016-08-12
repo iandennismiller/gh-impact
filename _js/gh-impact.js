@@ -14,12 +14,10 @@ var query = function() {
     $("#search_box").css("display", "none");
 
     var bucket = $.md5(account_name.toLowerCase()).slice(0, 2);
-    console.log("bucket: " + bucket);
 
     $.getJSON( "data/json/" + bucket + ".json", function(data) {
         var account = data[account_name.toLowerCase()];
         if (account != undefined) {
-            console.log(account);
             $("#account_name").html("<a target='_blank' href='http://github.com/" + account["l"] + "'>" + account["l"] + "</a>");
             $("#impact_score").html("<a href='http://www.gh-impact.com/#" + account["l"] + "'>" + account["s"] + "</a>");
             if (account["t"] == 1) {
@@ -52,9 +50,6 @@ var query = function() {
 }
 
 var show_percentile = function(score, account_type) {
-    console.log("score: " + score);
-    console.log("type: " + account_type);
-
     var percentiles = [
         [0.0000000, 0.0000000, 0.6829202, 0.8619581, 0.9310143, 0.9617953, 0.9776193, 0.9857905, 0.9903589, 0.9931521],
         []
