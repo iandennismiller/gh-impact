@@ -17,6 +17,8 @@
 - [x] logo? basically...
 - [x] add organizations
 - [x] pages should be simple URLs: /about, etc
+- [x] consolidate about and move items to answers
+- [x] table of contents
 - [ ] lowercase all names so case is insensitive
 - [ ] enhance Report: use github API to retrieve other details about the user
 - [ ] leader boards, basically
@@ -24,7 +26,6 @@
 - [ ] Shorten key names in json
 - [ ] include account type in json and display in report
 - [ ] remove search box from report
-- [ ] consolidate about and move items to answers
 
 # Analytical Questions
 

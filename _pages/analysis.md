@@ -9,6 +9,8 @@ menu: main
 
 The *gh-impact* dataset is currently being explored and results will be posted here.
 
+{% include toc.html %}
+
 ## How does one score compare to the population?
 
 First, be sure to read [these caveats regarding comparison](/answers/#are-gh-impact-scores-comparable-between-two-users-or-two-industries), because there are a few reasons why scores might not be directly comparable.

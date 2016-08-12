@@ -15,7 +15,7 @@ url: "https://iandennismiller.github.io" # the base hostname & protocol for your
 twitter_username: iandennismiller
 github_username:  iandennismiller
 include: ["_pages", "_html"]
-exclude: ["CNAME", "new_post.py", "Readme.md"]
+exclude: ["CNAME", "new_post.py", "Readme.md", "Todo.md"]
 
 # Build settings
 markdown: kramdown
