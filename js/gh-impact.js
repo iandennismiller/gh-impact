@@ -55,8 +55,10 @@ var query = function() {
             $("#account_name").html("not found");
             $("#impact_score").html("");
 
-            ga('send', 'exception', {
-              'exDescription': 'SearchError ' + account_name
+            ga('send', {
+                hitType: 'event',
+                eventCategory: 'search',
+                eventAction: 'not_found',
             });
         }
     });
