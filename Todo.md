@@ -29,6 +29,7 @@
 - [x] split JSON database by hash buckets, not alpha
 - [x] include account type in json
 - [ ] evaluate https://github.com/jekyll/jekyll-assets
+- [ ] improve pipeline for leaders, percentiles, test results
 
 ## Report Enhancements
 
@@ -37,8 +38,11 @@
 - [x] arrange report as a table or something
 - [x] percentiles for organizations
 - [ ] use github API to retrieve other details about the user
+- [ ] format leader board side-by-side
 
-## Analysis
+## Findings
+
+<!-- results and discussion -->
 
 - [x] density plot of scores to answer question: how do I compare?
 - [x] is there a substantial difference between individuals and organizations?
@@ -50,7 +54,10 @@
 - [ ] is gh-impact predictive of the popularity of an accounts's projects?
 - [ ] does organization size predict impact factor?
 - [ ] does quantity of projects predict impact factor?
-- [ ] improve pipeline for leaders, percentiles, test results
+
+## Questions and Answers
+
+<!-- intro, background, methods -->
 
 ## Public Relations
 
@@ -61,3 +68,8 @@
 - [ ] contact mechanism: is Twitter good enough?
 - [ ] register alternate domain names?
 - [ ] submit to HCOMP 2016 before August 15 at 5pm PST
+
+## Questions
+
+- [ ] what is the significance of this work?
+- [ ] how is this novel?  (scan of arXiv, related works, etc)

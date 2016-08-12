@@ -3,7 +3,7 @@
 [http://www.gh-impact.com](http://www.gh-impact.com)
 
 - [about](http://www.gh-impact.com/about/)
-- [analysis](http://www.gh-impact.com/analysis/)
+- [findings](http://www.gh-impact.com/findings/)
 - [questions/answers](http://www.gh-impact.com/answers/)
 - [leader board](http://www.gh-impact.com/leaderboard/)
 - [blog](http://www.gh-impact.com/blog/)

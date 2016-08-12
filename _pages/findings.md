@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Analysis
-permalink: /analysis/
+title: Findings
+permalink: /findings/
 menu: main
 ---
 
