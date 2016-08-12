@@ -40,7 +40,7 @@ td {
 }
 </style>
 
-{% include analysis_percentile.txt %}
+{% include analysis_user_percentile.txt %}
 
 ## Is there a difference between individuals and organizations?
 

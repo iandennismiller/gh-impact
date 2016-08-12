@@ -6,7 +6,7 @@ permalink: /index.html
 <div class="home">
 
   <div id="search_box">
-    <h2>Enter a GitHub account name to learn their <em>gh-impact</em> Score</h2>
+    <h2>Enter a GitHub account to learn its <em>gh-impact</em> score</h2>
 
     <input id="account_name_query" type="text" name="account_name" tabindex="1" autofocus>
     <a id="search" class="button" href="#" tabindex="2">Search</a>
@@ -18,29 +18,29 @@ permalink: /index.html
       <h3><em>gh-impact</em> Report</h3>
 
       <p>
-        GitHub Profile: <span id="account_name"></span>
+        <span class="label">GitHub Profile:</span> <span id="account_name"></span>
       </p>
       <p>
-        <em>gh-impact</em> Score: <span id="impact_score"></span>
+        <span class="label"><em>gh-impact</em> Score:</span> <span id="impact_score"></span>
       </p>
       <p>
-        Percentile: <span id="percentile"></span>
+        <span class="label">Percentile:</span> <span id="percentile"></span>
       </p>
       <p>
-        Account type: <span id="account_type"></span>
+        <span class="label">Account type:</span> <span id="account_type"></span>
       </p>
     </div>
 
     <div id="brief">
       <p>
-      What does this number mean? <a href="/about/">Read more about it.</a>
+      What does the "<em>gh-impact</em> score" number mean? <a href="/about/">Read more about it here.</a>
       </p>
     </div>
 
   </div>
 
   <div id="examples">
-    <h3>examples</h3>
+    <h3>Example searches</h3>
 
     <ul>
       {% include examples.html %}

@@ -34,8 +34,8 @@
 
 - [x] display account type on report
 - [x] report percentiles corresponding to scores based on a table lookup
+- [x] arrange report as a table or something
 - [ ] percentiles for organizations
-- [ ] arrange report as a table or something
 - [ ] use github API to retrieve other details about the user
 
 ## Analysis
@@ -59,3 +59,5 @@
 - [ ] promotion: /r/programming, HN, twitter
 - [ ] contact mechanism: is Twitter good enough?
 - [ ] register alternate domain names?
+- [ ] submit to HCOMP 2016 before August 15 at 5pm PST
+
