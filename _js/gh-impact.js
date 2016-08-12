@@ -2,29 +2,6 @@
 Ian Dennis Miller
 */
 
-/*
-http://stackoverflow.com/a/1533945/1146681
-*/
-(function($) {
-$.fn.randomize = function(childElem) {
-        return this.each(function() {
-        var $this = $(this);
-        var elems = $this.children(childElem);
-
-        elems.sort(function() { return (Math.round(Math.random())-0.5); });
-
-        $this.detach(childElem);
-
-        for(var i=0; i < elems.length; i++)
-        $this.append(elems[i]);
-
-        });
-    }
-})(jQuery);
-
-/*
-*/
-
 var query = function() {
 
     var account_name = $("#account_name_query").val();
@@ -42,8 +19,15 @@ var query = function() {
     $.getJSON( "data/json/" + bucket + ".json", function(data) {
         var account = data[account_name.toLowerCase()];
         if (account != undefined) {
+            console.log(account);
             $("#account_name").html("<a target='_blank' href='http://github.com/" + account["l"] + "'>" + account["l"] + "</a>");
             $("#impact_score").html(account["s"]);
+            if (account["t"] == 1) {
+                $("#account_type").html("Individual");
+            }
+            else {
+                $("#account_type").html("Organization");
+            }
             location.hash = account["l"];
             document.title = "gh-impact report: " + account["l"];
 
@@ -108,13 +92,11 @@ var handle_enter = function (e) {
 
 $(function() {
     $("#search").removeAttr("href");
-
     $("#search").click(query);
-
-    $(window).on('hashchange', run_location);
-
-    $('#account_name_query').keypress(handle_enter);
     $('#search').keypress(handle_enter);
 
+    $('#account_name_query').keypress(handle_enter);
+
+    $(window).on('hashchange', run_location);
     run_location();
 });

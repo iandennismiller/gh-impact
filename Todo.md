@@ -31,9 +31,9 @@
 
 ## Report Enhancements
 
-- [ ] display account type on report
-- [ ] use github API to retrieve other details about the user
+- [x] display account type on report
 - [ ] report percentiles corresponding to scores based on a table lookup
+- [ ] use github API to retrieve other details about the user
 
 ## Analysis
 
