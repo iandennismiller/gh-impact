@@ -1,6 +1,6 @@
 # Todo
 
-## Website
+## Website and Data
 
 - [x] hit enter to search
 - [x] put the query in the location history
@@ -24,17 +24,18 @@
 - [x] remove search box from report
 - [x] leader boards
 - [x] google analytics tracks quantity of search queries
-- [ ] lowercase all names so case is insensitive
-- [ ] Shorten key names in json
-- [ ] split JSON database by hash buckets, not alpha
+- [x] lowercase all names so case is insensitive
+- [x] Shorten key names in json
+- [x] split JSON database by hash buckets, not alpha
+- [x] include account type in json
 
 ## Report Enhancements
 
-- [ ] include account type in json and display in report
+- [ ] display account type on report
 - [ ] use github API to retrieve other details about the user
 - [ ] report percentiles corresponding to scores based on a table lookup
 
-## Analytical Questions
+## Analysis
 
 - [x] density plot of scores to answer question: how do I compare?
 - [x] is there a substantial difference between individuals and organizations?
@@ -44,6 +45,8 @@
 - [ ] is gh-impact predictive of the popularity of an accounts's projects?
 - [ ] does organization size predict impact factor?
 - [ ] does quantity of projects predict impact factor?
+- [ ] improve aesthetic for plots
+- [ ] ensure all plots have titles and axes are labeled
 
 ## Public Relations
 
