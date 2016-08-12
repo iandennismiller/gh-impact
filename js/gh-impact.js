@@ -44,17 +44,21 @@ var query = function() {
             $("#impact_score").html(data[account_name]);
             location.hash = account_name;
             document.title = "gh-impact report: " + account_name;
+
+            ga('send', {
+                hitType: 'event',
+                eventCategory: 'search',
+                eventAction: 'query',
+            });
         }
         else {
             $("#account_name").html("not found");
             $("#impact_score").html("");
-        }
-    });
 
-    ga('send', {
-        hitType: 'event',
-        eventCategory: 'search',
-        eventAction: 'query',
+            ga('send', 'exception', {
+              'exDescription': 'SearchError ' + account_name
+            });
+        }
     });
 }
 
@@ -64,6 +68,12 @@ var run_location = function() {
         q = q.substring(1, location.hash.length);
         $("#account_name_query").val(q);
         query();
+
+        ga('send', {
+            hitType: 'event',
+            eventCategory: 'search',
+            eventAction: 'run_location',
+        });
     }
     else {
         $("#masked").css("display", "none");
@@ -76,6 +86,12 @@ var show_examples = function() {
     $("#examples ul").randomize("li");
     $("#examples ul li").slice(5, $("#examples ul li").length).remove();
     $("#examples").slideDown();
+
+    ga('send', {
+        hitType: 'event',
+        eventCategory: 'search',
+        eventAction: 'show_examples',
+    });
 }
 
 var handle_enter = function (e) {
