@@ -60,6 +60,10 @@ Individuals and Organizations can be visually compared in absolute terms, too.  
 
 ![Density Plot Comparison](/media/density_comparison-1.png)
 
+## Stars Received
+
+![Stars Received](/media/log_stars_received-1.png)
+
 <!-- ## is there a relationship between **gh-impact** and number of followers? -->
 
 <!-- ## is there any effect of language upon gh-impact? -->

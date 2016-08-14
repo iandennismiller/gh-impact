@@ -30,6 +30,9 @@
 - [x] include account type in json
 - [ ] evaluate https://github.com/jekyll/jekyll-assets
 - [ ] improve pipeline for leaders, percentiles, test results
+- [ ] add some organizations to examples list
+- [ ] build examples dynamically from JSON inside gh-impact.js
+- [ ] build leader boards dynamically from JSON lists
 
 ## Report Enhancements
 
@@ -67,6 +70,7 @@
 - [ ] promotion: /r/programming, HN, twitter
 - [ ] contact mechanism: is Twitter good enough?
 - [ ] register alternate domain names?
+- [ ] "at a glance" summary page
 - [ ] submit to HCOMP 2016 before August 15 at 5pm PST
 
 ## Questions

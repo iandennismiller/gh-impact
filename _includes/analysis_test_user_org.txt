@@ -1,6 +1,6 @@
 
 Call:
-lm(formula = h_index ~ type)
+lm(formula = gh_impact ~ type)
 
 Residuals:
    Min     1Q Median     3Q    Max 
