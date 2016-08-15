@@ -69,3 +69,19 @@ Individuals and Organizations can be visually compared in absolute terms, too.  
 <!-- ## is there any effect of language upon gh-impact? -->
 
 <!-- ## is **gh-impact** predictive of the popularity of a users's projects? -->
+
+## Organization Size and Impact
+
+![Organization Size and Impact](/media/org_impact-1.png)
+
+## Number of Projects and Impact
+
+![Number of Projects and Impact](/media/impact_and_project_count-1.png)
+
+Individuals are the narrow distribution, organizations are the wide distribution.
+
+## Number of Followers and Impact
+
+![Number of Followers and Impact](/media/impact_and_followers-1.png)
+
+Individuals are the narrow distribution, organizations are the wide distribution.
