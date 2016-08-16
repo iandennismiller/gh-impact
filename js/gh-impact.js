@@ -473,7 +473,7 @@ var query = function() {
                 hitType: 'event',
                 eventCategory: 'search',
                 eventAction: 'query',
-                eventLabel: account
+                eventLabel: account_name
             });
         }
         else {
@@ -484,7 +484,7 @@ var query = function() {
                 hitType: 'event',
                 eventCategory: 'search',
                 eventAction: 'not_found',
-                eventLabel: account
+                eventLabel: account_name
             });
         }
     });
@@ -525,7 +525,7 @@ var run_location = function() {
             hitType: 'event',
             eventCategory: 'index',
             eventAction: 'run_location',
-            eventLabel: account
+            eventLabel: q
         });
     }
     else {
