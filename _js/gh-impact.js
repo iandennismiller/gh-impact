@@ -137,4 +137,9 @@ $(function() {
 
     $(window).on('hashchange', run_location);
     run_location();
+
+    $(".outbound").click(function() {
+        trackOutboundLink($(this).attr("href"));
+        return(false);
+    })
 });
