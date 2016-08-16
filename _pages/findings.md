@@ -85,3 +85,29 @@ Individuals are the narrow distribution, organizations are the wide distribution
 ![Number of Followers and Impact](/media/impact_and_followers-1.png)
 
 Individuals are the narrow distribution, organizations are the wide distribution.
+
+## Popularity Penalty to Individuals
+
+![Popularity Penalty to Individuals](/media/stars_penalty_plot-1.png)
+
+- the 95% CI for organizations includes 0, it is not significant, and the estimate is slightly positive
+- the 95% CI for individuals does not include 0, it is a robust small effect
+- is it possible there are some individuals fronting as organizations?
+
+## Max Stars and Impact
+
+![Max Stars and Impact](/media/max_stars_impact-1.png)
+
+## Total Stars and Impact
+
+![Total Stars and Impact](/media/stars_received_impact-1.png)
+
+## Reciprocity
+
+### Give a Star Get a Star?
+
+![Give a Star Get a Star](/media/give_star_get_star-1.png)
+
+### Give a Follow Get a Follow?
+
+![Give a Follow Get a Follow](/media/give_follow_get_follow-1.png)

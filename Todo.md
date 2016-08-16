@@ -33,6 +33,8 @@
 - [ ] add some organizations to examples list
 - [ ] build examples dynamically from JSON inside gh-impact.js
 - [ ] build leader boards dynamically from JSON lists
+- [ ] new page: related work
+- [ ] new page: "at a glance" findings; possibly integrate with landing page
 
 ## Report Enhancements
 
@@ -42,9 +44,8 @@
 - [x] percentiles for organizations
 - [ ] use github API to retrieve other details about the user
 - [ ] format leader board side-by-side
-- [ ] new page: related work
 
-## Findings
+## Page: Findings
 
 <!-- results and discussion -->
 
@@ -53,13 +54,15 @@
 - [x] who/which are the top users and organizations?
 - [x] improve aesthetic for plots
 - [x] ensure all plots have titles and axes are labeled
-- [ ] is there a relationship between gh-impact and number of followers?
-- [ ] is there any effect of project language upon gh-impact?
-- [ ] is gh-impact predictive of the popularity of an accounts's projects?
-- [ ] does organization size predict impact factor?
-- [ ] does quantity of projects predict impact factor?
+- [x] is there a relationship between gh-impact and number of followers?
+- [x] does quantity of projects predict impact factor?
+- [x] what drives star-giving behavior?
+- [x] is gh-impact predictive of the popularity of an accounts's projects?
+- [x] does organization size predict impact factor?
+- [ ] effect of project language upon gh-impact?  meh... lost interest...
+- [ ] do accounts with lots of follows give stars more effectively (i.e. attach to high gh-impact projects more often)?
 
-## Questions and Answers
+## Page: Questions and Answers
 
 <!-- intro, background, methods -->
 
