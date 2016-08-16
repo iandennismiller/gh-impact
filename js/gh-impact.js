@@ -270,7 +270,27 @@ if(e&&1===a.nodeType)while(c=e[d++])a.removeAttribute(c)}}),hb={set:function(a,b
         }
     };
     
-}(typeof jQuery === 'function' ? jQuery : this));// https://github.com/ghiculescu/jekyll-table-of-contents
+}(typeof jQuery === 'function' ? jQuery : this));/*
+http://stackoverflow.com/a/1533945/1146681
+*/
+
+(function($) {
+$.fn.randomize = function(childElem) {
+        return this.each(function() {
+        var $this = $(this);
+        var elems = $this.children(childElem);
+
+        elems.sort(function() { return (Math.round(Math.random())-0.5); });
+
+        $this.detach(childElem);
+
+        for(var i=0; i < elems.length; i++)
+        $this.append(elems[i]);
+
+        });
+    }
+})(jQuery);
+// https://github.com/ghiculescu/jekyll-table-of-contents
 (function($){
   $.fn.toc = function(options) {
     var defaults = {
@@ -369,27 +389,11 @@ if(e&&1===a.nodeType)while(c=e[d++])a.removeAttribute(c)}}),hb={set:function(a,b
   };
 })(jQuery);
 /*
-http://stackoverflow.com/a/1533945/1146681
+Ian Dennis Miller
 */
 
-(function($) {
-$.fn.randomize = function(childElem) {
-        return this.each(function() {
-        var $this = $(this);
-        var elems = $this.children(childElem);
-
-        elems.sort(function() { return (Math.round(Math.random())-0.5); });
-
-        $this.detach(childElem);
-
-        for(var i=0; i < elems.length; i++)
-        $this.append(elems[i]);
-
-        });
-    }
-})(jQuery);
 var percentiles = [
-    [
+    [ // individuals
         0.0000000,
         0.0000000,
         0.6885959,
@@ -407,7 +411,7 @@ var percentiles = [
         0.9986461,
         0.9989227
     ],
-    [
+    [ // organizations
         0.0000000,
         0.0000000,
         0.6473897,
@@ -469,6 +473,7 @@ var query = function() {
                 hitType: 'event',
                 eventCategory: 'search',
                 eventAction: 'query',
+                dimension1: account
             });
         }
         else {
@@ -479,6 +484,7 @@ var query = function() {
                 hitType: 'event',
                 eventCategory: 'search',
                 eventAction: 'not_found',
+                dimension1: account
             });
         }
     });

@@ -41,6 +41,7 @@ var query = function() {
                 hitType: 'event',
                 eventCategory: 'search',
                 eventAction: 'query',
+                dimension1: account
             });
         }
         else {
@@ -51,6 +52,7 @@ var query = function() {
                 hitType: 'event',
                 eventCategory: 'search',
                 eventAction: 'not_found',
+                dimension1: account
             });
         }
     });
