@@ -5,6 +5,18 @@ permalink: /leaderboard/
 menu: main
 ---
 
-The Leader Board is a list of accounts with the highest *gh-impact* scores.  The list is divided into 20 individual accounts and 20 organization accounts.
+The Leader Board is a list of accounts with the highest *gh-impact* scores.
 
-{% include leaders.txt %}
+<div id="board">
+    <div class="leaderboard" id="individuals">
+        <h3>individuals</h3>
+    </div>
+
+    <div class="leaderboard" id="organizations">
+        <h3>organizations</h3>
+    </div>
+</div>
+
+<script>
+$(leaderboard_main);
+</script>

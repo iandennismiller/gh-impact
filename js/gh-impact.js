@@ -408,6 +408,8 @@ var trackOutboundLink = function(url) {
         }
     );
 }
+var leaderboard_individuals = [{"login":"sindresorhus","gh_impact":114},{"login":"amanne89","gh_impact":104},{"login":"substack","gh_impact":97},{"login":"nagynet200","gh_impact":93},{"login":"Tj","gh_impact":90},{"login":"takkol","gh_impact":89},{"login":"servicessolahart","gh_impact":83},{"login":"visionmedia","gh_impact":74},{"login":"nagymi50","gh_impact":74},{"login":"jonootz","gh_impact":72},{"login":"maxogden","gh_impact":60},{"login":"adamdelarosa","gh_impact":60},{"login":"tpope","gh_impact":57},{"login":"mafintosh","gh_impact":56},{"login":"Firebase","gh_impact":56},{"login":"mattt","gh_impact":54},{"login":"addyosmani","gh_impact":53},{"login":"orsolya00","gh_impact":52},{"login":"gmarciani","gh_impact":51},{"login":"nicklockwood","gh_impact":50}] ;
+var leaderboard_organizations = [{"login":"google","gh_impact":185},{"login":"facebook","gh_impact":147},{"login":"apache","gh_impact":130},{"login":"Microsoft","gh_impact":104},{"login":"mozilla","gh_impact":95},{"login":"codrops","gh_impact":92},{"login":"twitter","gh_impact":88},{"login":"square","gh_impact":79},{"login":"googlesamples","gh_impact":73},{"login":"Netflix","gh_impact":72},{"login":"mapbox","gh_impact":70},{"login":"spring-projects","gh_impact":67},{"login":"thoughtbot","gh_impact":66},{"login":"XoopsModulesArchive","gh_impact":64},{"login":"github","gh_impact":63},{"login":"angular","gh_impact":62},{"login":"GoogleCloudPlatform","gh_impact":61},{"login":"awslabs","gh_impact":61},{"login":"yahoo","gh_impact":59},{"login":"Atom","gh_impact":59}] ;
 /*
 Ian Dennis Miller
 */
@@ -593,6 +595,29 @@ var index_main = function() {
 
     $(window).on('hashchange', run_location);
     run_location();
+}
+
+var leaderboard_populate = function(element, leaderboard_array) {
+    for (var idx in leaderboard_array) {
+        var account = leaderboard_array[idx];
+        console.log(account);
+        var entry = $("<li>");
+        var link = $("<a>").attr("href", "/#" + account.login).html(account.login);
+        entry.append(
+            // $("<span class='leader_login'>").html(account.login),
+            $("<span class='leader_login'>").html(link),
+            $("<span class='leader_gh_impact'>").html(account.gh_impact)
+        );
+        element.append(entry);
+    }
+}
+
+var leaderboard_main = function() {
+    $("#individuals").append($("<ul>"));
+    $("#organizations").append($("<ul>"));
+
+    leaderboard_populate($("#individuals ul"), leaderboard_individuals);
+    leaderboard_populate($("#organizations ul"), leaderboard_organizations);
 }
 
 var track_clicks = function() {

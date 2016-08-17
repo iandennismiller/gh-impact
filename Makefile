@@ -9,4 +9,7 @@ js:
 	cat _js/*.js > js/gh-impact.js
 	@echo "Done"
 
-.PHONY: depends js
+publish: js
+	git commit -am "automatic publish"
+
+.PHONY: depends js publish

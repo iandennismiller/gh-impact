@@ -29,13 +29,16 @@
 - [x] split JSON database by hash buckets, not alpha
 - [x] include account type in json
 - [x] track certain outgoing links as goals/conversions
-- [ ] evaluate https://github.com/jekyll/jekyll-assets
-- [ ] improve pipeline for leaders, percentiles, test results
+- [x] build leader boards dynamically from JSON lists
+- [x] improve pipeline for leaders
+- [x] evaluate https://github.com/jekyll/jekyll-assets; no dice
+- [ ] better pipeline for percentiles
 - [ ] add some organizations to examples list
 - [ ] build examples dynamically from JSON inside gh-impact.js
-- [ ] build leader boards dynamically from JSON lists
+- [ ] search button is magnifying glass icon
+- [ ] link to report on home page
+- [ ] latest blog post on front page
 - [ ] new page: related work
-- [ ] new page: "at a glance" findings; possibly integrate with landing page
 
 ## Report Enhancements
 
@@ -45,6 +48,10 @@
 - [x] percentiles for organizations
 - [ ] use github API to retrieve other details about the user
 - [ ] format leader board side-by-side
+- [ ] some users get 100th percentile...  99 is max
+- [ ] star count for most popular project
+- [ ] organization size, for orgs
+- [ ] average stars
 
 ## Page: Findings
 
@@ -67,6 +74,11 @@
 
 <!-- intro, background, methods -->
 
+## Page: At a Glance
+
+- [ ] "at a glance" summary page
+- [ ] new page: "at a glance" from results; possibly on landing page?
+
 ## Public Relations
 
 - [x] get a domain, probably
@@ -76,9 +88,10 @@
 - [ ] promotion: /r/programming, HN, twitter
 - [ ] contact mechanism: is Twitter good enough?
 - [ ] register alternate domain names?
-- [ ] "at a glance" summary page
 
 ## Questions
 
 - [ ] what is the significance of this work?
 - [ ] how is this novel?  (scan of arXiv, related works, etc)
+- [ ] once somebody has searched, what do they do next?  read full report?
+
