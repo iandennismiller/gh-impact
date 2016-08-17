@@ -133,15 +133,6 @@ var handle_enter = function (e) {
 }
 
 $(function() {
-    $("#search").removeAttr("href");
-    $("#search").click(query);
-    $('#search').keypress(handle_enter);
-
-    $('#account_name_query').keypress(handle_enter);
-
-    $(window).on('hashchange', run_location);
-    run_location();
-
     $(".outbound").click(function() {
         trackOutboundLink($(this).attr("href"));
         return(false);
