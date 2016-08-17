@@ -8,7 +8,7 @@
 var trackOutboundLink = function(url) {
     ga('send', 'event', {
         eventCategory: 'outbound',
-        eventAction: 'clock',
+        eventAction: 'click',
         eventLabel: url,
         eventValue: 1,
         transport: 'beacon',
