@@ -41,7 +41,8 @@ var query = function() {
                 hitType: 'event',
                 eventCategory: 'search',
                 eventAction: 'query',
-                eventLabel: account_name
+                eventLabel: account_name,
+                eventValue: 1
             });
         }
         else {
@@ -52,7 +53,8 @@ var query = function() {
                 hitType: 'event',
                 eventCategory: 'search',
                 eventAction: 'not_found',
-                eventLabel: account_name
+                eventLabel: account_name,
+                eventValue: 1
             });
         }
     });
@@ -93,7 +95,8 @@ var run_location = function() {
             hitType: 'event',
             eventCategory: 'index',
             eventAction: 'run_location',
-            eventLabel: q
+            eventLabel: q,
+            eventValue: 1
         });
     }
     else {
@@ -118,6 +121,7 @@ var show_examples = function() {
         hitType: 'event',
         eventCategory: 'index',
         eventAction: 'show_examples',
+        eventValue: 1
     });
 }
 

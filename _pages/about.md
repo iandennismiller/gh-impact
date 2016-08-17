@@ -11,4 +11,4 @@ This brief summary omits [many crucial details](/answers/) that are essential to
 
 ### About the author
 
-[Ian Dennis Miller](http://imiller.utsc.utoronto.ca) is a PhD candidate at the University of Toronto.  His work focuses on memes, social networks, agent based modeling, and synthetic populations.
+<a class="outbound" href="http://imiller.utsc.utoronto.ca">Ian Dennis Miller</a> is a PhD candidate at the University of Toronto.  His work focuses on memes, social networks, agent based modeling, and synthetic populations.

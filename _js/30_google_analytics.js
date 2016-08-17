@@ -6,9 +6,15 @@
 */
 
 var trackOutboundLink = function(url) {
-    console.log(url);
-    ga('send', 'event', 'outbound', 'click', url, {
-        'transport': 'beacon',
-        'hitCallback': function(){document.location = url;}
-    });
+    ga('send', 'event', {
+        eventCategory: 'outbound',
+        eventAction: 'clock',
+        eventLabel: url,
+        eventValue: 1,
+        transport: 'beacon',
+        hitCallback: function() {
+            document.location = url;
+            }
+        }
+    );
 }
