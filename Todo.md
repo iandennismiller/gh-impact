@@ -28,6 +28,7 @@
 - [x] Shorten key names in json
 - [x] split JSON database by hash buckets, not alpha
 - [x] include account type in json
+- [x] track certain outgoing links as goals/conversions
 - [ ] evaluate https://github.com/jekyll/jekyll-assets
 - [ ] improve pipeline for leaders, percentiles, test results
 - [ ] add some organizations to examples list
@@ -69,13 +70,13 @@
 ## Public Relations
 
 - [x] get a domain, probably
+- [x] submit to HCOMP 2016 before August 15 at 5pm PST
 - [ ] write blog post about this on academic blog
 - [ ] explanation powerpoint video
 - [ ] promotion: /r/programming, HN, twitter
 - [ ] contact mechanism: is Twitter good enough?
 - [ ] register alternate domain names?
 - [ ] "at a glance" summary page
-- [ ] submit to HCOMP 2016 before August 15 at 5pm PST
 
 ## Questions
 

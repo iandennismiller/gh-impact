@@ -2,7 +2,7 @@
 layout: page
 title: Findings
 permalink: /findings/
-menu: main
+menu: none
 ---
 
 **NOTICE: Draft.**  As of August 9, 2016 this analysis is ongoing.
