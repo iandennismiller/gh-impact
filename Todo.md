@@ -32,13 +32,14 @@
 - [x] build leader boards dynamically from JSON lists
 - [x] improve pipeline for leaders
 - [x] evaluate https://github.com/jekyll/jekyll-assets; no dice
+- [x] add some organizations to examples list
+- [x] build examples dynamically from JSON inside gh-impact.js
+- [x] search button is magnifying glass icon
 - [ ] better pipeline for percentiles
-- [ ] add some organizations to examples list
-- [ ] build examples dynamically from JSON inside gh-impact.js
-- [ ] search button is magnifying glass icon
 - [ ] link to report on home page
 - [ ] latest blog post on front page
 - [ ] new page: related work
+- [ ] add Disqus to blog posts
 
 ## Report Enhancements
 

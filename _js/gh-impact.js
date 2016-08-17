@@ -48,6 +48,7 @@ var query = function() {
         else {
             $("#account_name").html("not found");
             $("#impact_score").html("");
+            location.hash = "!notfound";
 
             ga('send', {
                 hitType: 'event',
@@ -112,10 +113,36 @@ var run_location = function() {
     }
 }
 
+var examples_ready = false;
+
+var generate_examples = function() {
+    if (examples_ready) { return(false); }
+
+    var examples = [];
+    examples = examples.concat(leaderboard_individuals);
+    examples = examples.concat(leaderboard_organizations);
+    examples.push({login: "iandennismiller", gh_impact: 4});
+
+    initRandomBucket(examples.length);
+
+    var root_element = $("#examples ul");
+
+    for (var i = 0; i < 5; i++) {
+        var account = examples[getRandomFromBucket()].login;
+        console.log(account);
+        var link = $("<a>").attr("href", "/#" + account).html(account);
+        var node = $("<li>");
+        node.append($("<span class='example'>").html(link));
+        root_element.append(node);
+    }
+
+    examples_ready = true;
+    return(true);
+}
+
 var show_examples = function() {
-    $("#examples ul").randomize("li");
-    $("#examples ul li").slice(5, $("#examples ul li").length).remove();
-    $("#examples").slideDown();
+    generate_examples();
+    $("#examples").show();
 
     ga('send', {
         hitType: 'event',

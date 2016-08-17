@@ -408,6 +408,19 @@ var trackOutboundLink = function(url) {
         }
     );
 }
+// http://stackoverflow.com/a/12987776/1146681
+var bucket = [];
+
+function getRandomFromBucket() {
+   var randomIndex = Math.floor(Math.random()*bucket.length);
+   return bucket.splice(randomIndex, 1)[0];
+}
+
+function initRandomBucket(len) {
+    for (var i = 0; i < len; i++) {
+        bucket.push(i);
+    }
+}
 var leaderboard_individuals = [{"login":"sindresorhus","gh_impact":114},{"login":"amanne89","gh_impact":104},{"login":"substack","gh_impact":97},{"login":"nagynet200","gh_impact":93},{"login":"Tj","gh_impact":90},{"login":"takkol","gh_impact":89},{"login":"servicessolahart","gh_impact":83},{"login":"visionmedia","gh_impact":74},{"login":"nagymi50","gh_impact":74},{"login":"jonootz","gh_impact":72},{"login":"maxogden","gh_impact":60},{"login":"adamdelarosa","gh_impact":60},{"login":"tpope","gh_impact":57},{"login":"mafintosh","gh_impact":56},{"login":"Firebase","gh_impact":56},{"login":"mattt","gh_impact":54},{"login":"addyosmani","gh_impact":53},{"login":"orsolya00","gh_impact":52},{"login":"gmarciani","gh_impact":51},{"login":"nicklockwood","gh_impact":50}] ;
 var leaderboard_organizations = [{"login":"google","gh_impact":185},{"login":"facebook","gh_impact":147},{"login":"apache","gh_impact":130},{"login":"Microsoft","gh_impact":104},{"login":"mozilla","gh_impact":95},{"login":"codrops","gh_impact":92},{"login":"twitter","gh_impact":88},{"login":"square","gh_impact":79},{"login":"googlesamples","gh_impact":73},{"login":"Netflix","gh_impact":72},{"login":"mapbox","gh_impact":70},{"login":"spring-projects","gh_impact":67},{"login":"thoughtbot","gh_impact":66},{"login":"XoopsModulesArchive","gh_impact":64},{"login":"github","gh_impact":63},{"login":"angular","gh_impact":62},{"login":"GoogleCloudPlatform","gh_impact":61},{"login":"awslabs","gh_impact":61},{"login":"yahoo","gh_impact":59},{"login":"Atom","gh_impact":59}] ;
 /*
@@ -502,6 +515,7 @@ var query = function() {
         else {
             $("#account_name").html("not found");
             $("#impact_score").html("");
+            location.hash = "!notfound";
 
             ga('send', {
                 hitType: 'event',
@@ -566,10 +580,36 @@ var run_location = function() {
     }
 }
 
+var examples_ready = false;
+
+var generate_examples = function() {
+    if (examples_ready) { return(false); }
+
+    var examples = [];
+    examples = examples.concat(leaderboard_individuals);
+    examples = examples.concat(leaderboard_organizations);
+    examples.push({login: "iandennismiller", gh_impact: 4});
+
+    initRandomBucket(examples.length);
+
+    var root_element = $("#examples ul");
+
+    for (var i = 0; i < 5; i++) {
+        var account = examples[getRandomFromBucket()].login;
+        console.log(account);
+        var link = $("<a>").attr("href", "/#" + account).html(account);
+        var node = $("<li>");
+        node.append($("<span class='example'>").html(link));
+        root_element.append(node);
+    }
+
+    examples_ready = true;
+    return(true);
+}
+
 var show_examples = function() {
-    $("#examples ul").randomize("li");
-    $("#examples ul li").slice(5, $("#examples ul li").length).remove();
-    $("#examples").slideDown();
+    generate_examples();
+    $("#examples").show();
 
     ga('send', {
         hitType: 'event',
