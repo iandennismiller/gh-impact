@@ -35,11 +35,10 @@
 - [x] add some organizations to examples list
 - [x] build examples dynamically from JSON inside gh-impact.js
 - [x] search button is magnifying glass icon
+- [x] new page: related work
+- [x] link to report on home page
+- [x] clean up old data files in _includes
 - [ ] better pipeline for percentiles
-- [ ] link to report on home page
-- [ ] latest blog post on front page
-- [ ] new page: related work
-- [ ] add Disqus to blog posts
 
 ## Report Enhancements
 
@@ -47,9 +46,9 @@
 - [x] report percentiles corresponding to scores based on a table lookup
 - [x] arrange report as a table or something
 - [x] percentiles for organizations
+- [x] format leader board side-by-side
+- [x] some users get 100th percentile...  99 is max
 - [ ] use github API to retrieve other details about the user
-- [ ] format leader board side-by-side
-- [ ] some users get 100th percentile...  99 is max
 - [ ] star count for most popular project
 - [ ] organization size, for orgs
 - [ ] average stars
@@ -93,6 +92,10 @@
 ## Questions
 
 - [ ] what is the significance of this work?
-- [ ] how is this novel?  (scan of arXiv, related works, etc)
+- [ ] how is this novel? fill related work (scan of arXiv, related works, etc)
 - [ ] once somebody has searched, what do they do next?  read full report?
 
+## Blog
+
+- [ ] latest blog post on front page?
+- [ ] add Disqus to blog posts

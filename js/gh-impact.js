@@ -529,24 +529,25 @@ var query = function() {
 }
 
 var show_percentile = function(score, account_type) {
-
+    var relevant_pct;
     var result;
 
     if (account_type == 1) { // individual
-        if (score < 15) {
-            result = Math.round(percentiles[0][score] * 100);
-        }
-        else {
-            result = 99;
-        }
+        relevant_pct = percentiles[0];
     }
     else { //organziation
-        if (score < 15) {
-            result = Math.round(percentiles[1][score] * 100);
-        }
-        else {
-            result = 99;
-        }
+        relevant_pct = percentiles[1];
+    }
+
+    if (score > 10) {
+        result = 99;
+    }
+    else {
+        result = Math.round(relevant_pct[score] * 100);
+    }
+
+    if (result == 100) {
+        result = 99;
     }
 
     $("#percentile").html(result);
