@@ -5,16 +5,16 @@ permalink: /report/
 menu: main
 ---
 
-**NOTICE: Working Paper.  This is not the final version.**
-
-<a class="outbound" href="/media/gh-impact-report-1.pdf">Download report PDF</a>
-
 <span style="font-size: 30pt;">
     Influence on GitHub - Individual Limits and Organization Advantages
 </span>
 
+<a class="outbound" href="/media/gh-impact-report-1.pdf">Download report PDF</a>
+
 Ian Dennis Miller<br/>
 August 15, 2016
+
+**NOTICE: Working Paper.  This is not the final version.**
 
 ## Abstract
 
@@ -32,8 +32,7 @@ This work makes extensive use of the GHTorrent archives provided by Gousios (201
 
 ## Results
 
-Our *gh-impact* calculations ultimately yielded n = 1,064,714 accounts with a *gh-impact* score above 0. Of
-these accounts, n = 918,061 are individuals and n = 146, 652 are organizations. Organizations (mean = 1.86) tend to have higher *gh-impact* scores than Individuals (mean = 1.61). The cumulative distribution of *gh-impact* rapidly tops out; the 10, 266 accounts with scores above 8 are in the 99th percentile.
+Our *gh-impact* calculations ultimately yielded n = 1,064,714 accounts with a *gh-impact* score above 0. Of these accounts, n = 918,061 are individuals and n = 146, 652 are organizations. Organizations (mean = 1.86) tend to have higher *gh-impact* scores than Individuals (mean = 1.61). The cumulative distribution of *gh-impact* rapidly tops out; the 10, 266 accounts with scores above 8 are in the 99th percentile.
 
 ### Popularity Penalty for Individuals
 

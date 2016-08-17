@@ -1,5 +1,40 @@
 # Todo
 
+## Questions
+
+- [ ] what is the significance of this work?
+- [ ] how is this novel? fill related work (scan of arXiv, related works, etc)
+- [ ] once somebody has searched, what do they do next?  read full report?
+- [ ] how do we know gh-impact is valid?  because it correlates with popular projects, num stars, num followers
+- [ ] why is gh-impact better than raw rankings?  because it is a single metric that combines both quantity and quality; no raw stat does that
+- [ ] effect of project language upon gh-impact?  meh... lost interest...
+- [ ] do accounts with lots of follows give stars more effectively (i.e. attach to high gh-impact projects more often)?
+
+## Website and Data
+
+- [ ] SQL pipeline for percentiles
+- [ ] "at a glance" summary page
+- [ ] search button should be on same line as query on small screens
+
+## Report Enhancements
+
+- [ ] use github API to retrieve other details about the user
+- [ ] star count for most popular project
+- [ ] organization size, for orgs
+- [ ] average stars
+
+## Public Relations
+
+- [ ] write blog post about this on academic blog
+- [ ] explanation powerpoint video
+- [ ] promotion: /r/programming, HN, twitter
+- [ ] contact mechanism: is Twitter good enough?
+- [ ] register alternate domain names?
+- [ ] latest blog post on front page?
+- [ ] add Disqus to blog posts
+
+# Completed Tasks
+
 ## Website and Data
 
 - [x] hit enter to search
@@ -38,24 +73,8 @@
 - [x] new page: related work
 - [x] link to report on home page
 - [x] clean up old data files in _includes
-- [ ] better pipeline for percentiles
-
-## Report Enhancements
-
-- [x] display account type on report
-- [x] report percentiles corresponding to scores based on a table lookup
-- [x] arrange report as a table or something
-- [x] percentiles for organizations
-- [x] format leader board side-by-side
-- [x] some users get 100th percentile...  99 is max
-- [ ] use github API to retrieve other details about the user
-- [ ] star count for most popular project
-- [ ] organization size, for orgs
-- [ ] average stars
 
 ## Page: Findings
-
-<!-- results and discussion -->
 
 - [x] density plot of scores to answer question: how do I compare?
 - [x] is there a substantial difference between individuals and organizations?
@@ -67,35 +86,17 @@
 - [x] what drives star-giving behavior?
 - [x] is gh-impact predictive of the popularity of an accounts's projects?
 - [x] does organization size predict impact factor?
-- [ ] effect of project language upon gh-impact?  meh... lost interest...
-- [ ] do accounts with lots of follows give stars more effectively (i.e. attach to high gh-impact projects more often)?
 
-## Page: Questions and Answers
+## Report Enhancements
 
-<!-- intro, background, methods -->
-
-## Page: At a Glance
-
-- [ ] "at a glance" summary page
-- [ ] new page: "at a glance" from results; possibly on landing page?
+- [x] display account type on report
+- [x] report percentiles corresponding to scores based on a table lookup
+- [x] arrange report as a table or something
+- [x] percentiles for organizations
+- [x] format leader board side-by-side
+- [x] some users get 100th percentile...  99 is max
 
 ## Public Relations
 
 - [x] get a domain, probably
 - [x] submit to HCOMP 2016 before August 15 at 5pm PST
-- [ ] write blog post about this on academic blog
-- [ ] explanation powerpoint video
-- [ ] promotion: /r/programming, HN, twitter
-- [ ] contact mechanism: is Twitter good enough?
-- [ ] register alternate domain names?
-
-## Questions
-
-- [ ] what is the significance of this work?
-- [ ] how is this novel? fill related work (scan of arXiv, related works, etc)
-- [ ] once somebody has searched, what do they do next?  read full report?
-
-## Blog
-
-- [ ] latest blog post on front page?
-- [ ] add Disqus to blog posts
