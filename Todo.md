@@ -15,6 +15,8 @@
 - [ ] SQL pipeline for percentiles
 - [ ] "at a glance" summary page
 - [ ] search button should be on same line as query on small screens
+- [ ] track example clicks differently
+- [ ] track results - report as a special event or funnel
 
 ## Report Enhancements
 

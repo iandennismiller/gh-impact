@@ -41,7 +41,7 @@ GitHub *stars* are therefore the best measure of actual project use. On that bas
 
 Under usage conditions that would not violate GitHub's terms of service, *gh-impact* is probably robust.  However, this is the Internet.  On that basis it's naive to presume that all users will adhere to GitHub's terms.
 
-The authors uncovered multiple accounts that appeared to have inflated *gh-impact* scores on the basis of some strange project usage behavior.  In one situation we observed, it appears a network of accounts were automatically generating and starring projects - presumably as part of research into git usage itself.  These accounts have not been removed from the results.
+The authors uncovered multiple accounts that appeared to have inflated *gh-impact* scores on the basis of some strange project usage behavior.  In one situation we observed, it appears a network of accounts were automatically generating and starring projects - presumably as part of research into git usage itself.  These accounts have been removed from the results.
 
 ## Why does this number not match my expectation?
 
@@ -49,7 +49,7 @@ If we consider GitHub's data to be "perfect," then in comparison *gh-impact* can
 
 ### Source Data
 
-An important influence is the data source used for this research, which is itself an ambitious project that is still working to improve the timescale mirrored in the project.
+An important influence is the data source used for this research ([GHTorrent](http://ghtorrent.org)) which is itself an ambitious project that is still working to improve the timescale mirrored in the project.
 
 ### Project Ownership
 
@@ -69,6 +69,8 @@ Maybe, but be careful.  H-Index, from which *gh-impact* is derived, has been fou
 
 We suspect the same cross-field comparisons will be dangerous on GitHub, just as with academia.  For example, some programming languages encourage the creation of many little packages, which may lead to slightly higher *gh-impact* scores for developers who use such languages.  Whether *gh-impact* is stratified by industry or by another facet like language is a future research direction.
 
+We can now say with confidence that Individual and Organization accounts behave differently, and are not directly comparable.  As a result, these two account types are analyzed and presented differently throughout the *gh-impact* work.
+
 ## Where do the data come from?
 
 Researchers at [GHTorrent](http://ghtorrent.org) provide MySQL database dumps on a regular basis (Gousios, 2013).  The **2016-07-19** database dump (approximately 41.3GB) was downloaded and the *users* (~13M rows), *projects* (~34M rows), and *watchers* (~49M rows) tables were extracted as CSV files.  The *watchers* table is named for historical reasons, but it actually contains stars - not watchers.
@@ -83,9 +85,9 @@ Data were imported into Postgres directly from the MySQL dumps. All subsequent c
 
 ## Will the authors help me with my project?
 
-Are you an academic researcher?  If so, then please get in touch.  I am also looking for post-doctoral research opportunities for Fall 2017.
+**Academics**: [please get in touch](http://imiller.utsc.utoronto.ca/page/contact.html). I am also looking for post-doctoral research opportunities starting Winter 2017.
 
-Are you in the industry?  Premium consulting services are available. DM [@iandennismiller](https://twitter.com/iandennismiller) to set up an initial consultation.
+**Industry**: Premium consulting services are available. DM [@iandennismiller](https://twitter.com/iandennismiller) to set up an initial consultation.
 
 ## References
 
