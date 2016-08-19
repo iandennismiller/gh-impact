@@ -9,7 +9,7 @@ menu: main
     Influence on GitHub - Individual Limits and Organization Advantages
 </span>
 
-<a class="outbound" href="/media/gh-impact-report-1.pdf">Download report PDF</a>
+<a class="internal" href="/media/gh-impact-report-1.pdf">Download report PDF</a>
 
 Ian Dennis Miller<br/>
 August 15, 2016

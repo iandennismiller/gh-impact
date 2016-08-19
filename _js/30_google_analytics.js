@@ -5,9 +5,9 @@
 * using 'navigator.sendBeacon' in browser that support it.
 */
 
-var trackOutboundLink = function(url) {
+var trackLink = function(url, direction) {
     ga('send', 'event', {
-        eventCategory: 'outbound',
+        eventCategory: direction,
         eventAction: 'click',
         eventLabel: url,
         eventValue: 1,
@@ -18,3 +18,25 @@ var trackOutboundLink = function(url) {
         }
     );
 }
+
+var trackOutboundLink = function(url) {
+    trackLink(url, 'outbound');
+}
+
+var trackInternalLink = function(url) {
+    trackLink(url, 'internal');
+}
+
+var track_clicks = function() {
+    $(".outbound").click(function() {
+        trackOutboundLink($(this).attr("href"));
+        return(false);
+    })
+
+    $(".internal").click(function() {
+        trackInternalLink($(this).attr("href"));
+        return(false);
+    })
+}
+
+$(track_clicks);

@@ -17,6 +17,14 @@
 - [ ] search button should be on same line as query on small screens
 - [ ] track example clicks differently
 - [ ] track results - report as a special event or funnel
+- [ ] no event for showing examples; new event for clicking examples
+- [ ] new goal: click to report
+- [ ] add robots.txt
+- [ ] twitter card
+- [ ] facebook opengraph
+- [ ] ability to link specific results via social
+- [ ] center landing page
+- [ ] experiment: is leaderboard or report stickier?
 
 ## Report Enhancements
 

@@ -395,9 +395,9 @@ $.fn.randomize = function(childElem) {
 * using 'navigator.sendBeacon' in browser that support it.
 */
 
-var trackOutboundLink = function(url) {
+var trackLink = function(url, direction) {
     ga('send', 'event', {
-        eventCategory: 'outbound',
+        eventCategory: direction,
         eventAction: 'click',
         eventLabel: url,
         eventValue: 1,
@@ -408,6 +408,28 @@ var trackOutboundLink = function(url) {
         }
     );
 }
+
+var trackOutboundLink = function(url) {
+    trackLink(url, 'outbound');
+}
+
+var trackInternalLink = function(url) {
+    trackLink(url, 'internal');
+}
+
+var track_clicks = function() {
+    $(".outbound").click(function() {
+        trackOutboundLink($(this).attr("href"));
+        return(false);
+    })
+
+    $(".internal").click(function() {
+        trackInternalLink($(this).attr("href"));
+        return(false);
+    })
+}
+
+$(track_clicks);
 // http://stackoverflow.com/a/12987776/1146681
 var bucket = [];
 
@@ -465,17 +487,143 @@ var percentiles = [
         0.9956905
     ]
 ];
+var examples_ready = false;
+
+var generate_examples = function() {
+    if (examples_ready) { return(false); }
+
+    var examples = [];
+    examples = examples.concat(leaderboard_individuals);
+    examples = examples.concat(leaderboard_organizations);
+    examples.push({login: "iandennismiller", gh_impact: 4});
+
+    initRandomBucket(examples.length);
+
+    var root_element = $("#examples ul");
+
+    for (var i = 0; i < 5; i++) {
+        var account = examples[getRandomFromBucket()].login;
+        var link = $("<a class='exlinks'>").attr("href", "/#" + account).html(account);
+        var node = $("<li>");
+        node.append($("<span class='example'>").html(link));
+        root_element.append(node);
+    }
+
+    $(".exlinks").click(function() {
+        ga('send', 'event', {
+            eventCategory: 'example',
+            eventAction: 'click',
+            eventLabel: $(this).attr("href"),
+            eventValue: 1,
+            transport: 'beacon'
+            }
+        );
+    })
+
+    examples_ready = true;
+    return(true);
+}
+
+var show_examples = function() {
+    generate_examples();
+    $("#examples").show();
+}
 /*
 Ian Dennis Miller
 */
 
-var query = function() {
+var run_location = function() {
+    var account_name = location.hash;
+    if (account_name != "") {
+        account_name = account_name.substring(1, account_name.length);
+        $("#account_name_query").val(account_name);
+        request_report(account_name);
+    }
+    else {
+        setup_search();
+        show_examples();
+    }
+}
 
-    var account_name = $("#account_name_query").val();
-    if ((!account_name) || (account_name == "undefined")) {
-        return(false);
+var index_main = function() {
+    $(window).on('hashchange', run_location);
+
+    if (location.hash != "") {
+        ga('send', {
+            hitType: 'event',
+            eventCategory: 'index',
+            eventAction: 'from_url_hash',
+            eventLabel: location.hash,
+            eventValue: 1
+        });
+        run_location();
+    }
+    else {
+        setup_search();
+        show_examples();
     }
 
+    init_search_handlers();
+}
+var leaderboard_populate = function(element, leaderboard_array) {
+    for (var idx in leaderboard_array) {
+        var account = leaderboard_array[idx];
+        var entry = $("<li>");
+        var link = $("<a>").attr("href", "/#" + account.login).html(account.login);
+        entry.append(
+            // $("<span class='leader_login'>").html(account.login),
+            $("<span class='leader_login'>").html(link),
+            $("<span class='leader_gh_impact'>").html(account.gh_impact)
+        );
+        element.append(entry);
+    }
+}
+
+var leaderboard_main = function() {
+    $("#individuals").append($("<ul>"));
+    $("#organizations").append($("<ul>"));
+
+    leaderboard_populate($("#individuals ul"), leaderboard_individuals);
+    leaderboard_populate($("#organizations ul"), leaderboard_organizations);
+}
+var request_report = function(account_name) {
+    var bucket = $.md5(account_name.toLowerCase()).slice(0, 2);
+    $.getJSON("/data/json/" + bucket + ".json",
+        function(data) {
+            var account_data = data[account_name.toLowerCase()];
+            report(account_name, account_data);
+        }
+    );
+}
+
+var report = function(account_name, account_data) {
+    setup_report();
+
+    if (account_data != undefined) {
+        ga('send', {
+            hitType: 'event',
+            eventCategory: 'report',
+            eventAction: 'render',
+            eventLabel: account_name,
+            eventValue: 1
+        });
+
+        render_report(account_data);
+    }
+    else {
+        ga('send', {
+            hitType: 'event',
+            eventCategory: 'report',
+            eventAction: 'not_found',
+            eventLabel: account_name,
+            eventValue: 0
+        });
+
+        render_not_found();
+    }
+}
+
+var setup_report = function() {
     // first clear all fields
     $("#account_name").html("");
     $("#impact_score").html("");
@@ -486,46 +634,24 @@ var query = function() {
     $("#masked").css("display", "block");
     $("#examples").css("display", "none");
     $("#search_box").css("display", "none");
+}
 
-    var bucket = $.md5(account_name.toLowerCase()).slice(0, 2);
+var render_report = function(account_data) {
+    $("#account_name").html("<a target='_blank' href='http://github.com/" + account_data["l"] + "'>" + account_data["l"] + "</a>");
+    $("#impact_score").html("<a href='http://www.gh-impact.com/#" + account_data["l"] + "'>" + account_data["s"] + "</a>");
+    if (account_data["t"] == 1) {
+        $("#account_type").html("Individual");
+    }
+    else {
+        $("#account_type").html("Organization");
+    }
+    show_percentile(account_data["s"], account_data["t"]);
+    document.title = "gh-impact report: " + account_data["l"];
+}
 
-    $.getJSON( "data/json/" + bucket + ".json", function(data) {
-        var account = data[account_name.toLowerCase()];
-        if (account != undefined) {
-            $("#account_name").html("<a target='_blank' href='http://github.com/" + account["l"] + "'>" + account["l"] + "</a>");
-            $("#impact_score").html("<a href='http://www.gh-impact.com/#" + account["l"] + "'>" + account["s"] + "</a>");
-            if (account["t"] == 1) {
-                $("#account_type").html("Individual");
-            }
-            else {
-                $("#account_type").html("Organization");
-            }
-            show_percentile(account["s"], account["t"]);
-            location.hash = account["l"];
-            document.title = "gh-impact report: " + account["l"];
-
-            ga('send', {
-                hitType: 'event',
-                eventCategory: 'search',
-                eventAction: 'query',
-                eventLabel: account_name,
-                eventValue: 1
-            });
-        }
-        else {
-            $("#account_name").html("not found");
-            $("#impact_score").html("");
-            location.hash = "!notfound";
-
-            ga('send', {
-                hitType: 'event',
-                eventCategory: 'search',
-                eventAction: 'not_found',
-                eventLabel: account_name,
-                eventValue: 1
-            });
-        }
-    });
+var render_not_found = function() {
+    $("#account_name").html("not found");
+    $("#impact_score").html("");
 }
 
 var show_percentile = function(score, account_type) {
@@ -552,120 +678,45 @@ var show_percentile = function(score, account_type) {
 
     $("#percentile").html(result);
 }
-
-var run_location = function() {
-    if (location.hash != "") {
-        var q = location.hash;
-        q = q.substring(1, location.hash.length);
-        $("#account_name_query").val(q);
-        query();
-
-        ga('send', {
-            hitType: 'event',
-            eventCategory: 'index',
-            eventAction: 'run_location',
-            eventLabel: q,
-            eventValue: 1
-        });
+var handle_search = function() {
+    var account_name = $("#account_name_query").val();
+    if ((!account_name) || (account_name == "undefined")) {
+        return(false);
     }
-    else {
-        $("#masked").css("display", "none");
-        $("#account_name_query").val("");
-        $("#search_box").css("display", "block");
-
-        setTimeout(function(){
-            $("#account_name_query").focus();
-        }, 1);
-
-        show_examples();
-    }
-}
-
-var examples_ready = false;
-
-var generate_examples = function() {
-    if (examples_ready) { return(false); }
-
-    var examples = [];
-    examples = examples.concat(leaderboard_individuals);
-    examples = examples.concat(leaderboard_organizations);
-    examples.push({login: "iandennismiller", gh_impact: 4});
-
-    initRandomBucket(examples.length);
-
-    var root_element = $("#examples ul");
-
-    for (var i = 0; i < 5; i++) {
-        var account = examples[getRandomFromBucket()].login;
-        console.log(account);
-        var link = $("<a>").attr("href", "/#" + account).html(account);
-        var node = $("<li>");
-        node.append($("<span class='example'>").html(link));
-        root_element.append(node);
-    }
-
-    examples_ready = true;
-    return(true);
-}
-
-var show_examples = function() {
-    generate_examples();
-    $("#examples").show();
 
     ga('send', {
         hitType: 'event',
-        eventCategory: 'index',
-        eventAction: 'show_examples',
+        eventCategory: 'search',
+        eventAction: 'submit',
+        eventLabel: account_name,
         eventValue: 1
     });
+
+    // setting this triggers onhashchange, triggering run_location
+    location.hash = account_name;
 }
 
-var handle_enter = function (e) {
+var handle_search_enter = function (e) {
     if (e.which == 13) {
-        query();
+        handle_search();
         return false;
     }
 }
 
-var index_main = function() {
+var init_search_handlers = function() {
+    $("#search").click(handle_search);
+    $('#search').keypress(handle_search_enter);
+    $('#account_name_query').keypress(handle_search_enter);
+}
+
+var setup_search = function() {
+    $("#masked").css("display", "none");
+    $("#search_box").css("display", "block");
+
     $("#search").removeAttr("href");
-    $("#search").click(query);
-    $('#search').keypress(handle_enter);
 
-    $('#account_name_query').keypress(handle_enter);
-
-    $(window).on('hashchange', run_location);
-    run_location();
+    $("#account_name_query").val("");
+    setTimeout(function(){
+        $("#account_name_query").focus();
+    }, 1);
 }
-
-var leaderboard_populate = function(element, leaderboard_array) {
-    for (var idx in leaderboard_array) {
-        var account = leaderboard_array[idx];
-        console.log(account);
-        var entry = $("<li>");
-        var link = $("<a>").attr("href", "/#" + account.login).html(account.login);
-        entry.append(
-            // $("<span class='leader_login'>").html(account.login),
-            $("<span class='leader_login'>").html(link),
-            $("<span class='leader_gh_impact'>").html(account.gh_impact)
-        );
-        element.append(entry);
-    }
-}
-
-var leaderboard_main = function() {
-    $("#individuals").append($("<ul>"));
-    $("#organizations").append($("<ul>"));
-
-    leaderboard_populate($("#individuals ul"), leaderboard_individuals);
-    leaderboard_populate($("#organizations ul"), leaderboard_organizations);
-}
-
-var track_clicks = function() {
-    $(".outbound").click(function() {
-        trackOutboundLink($(this).attr("href"));
-        return(false);
-    })
-}
-
-$(track_clicks);
