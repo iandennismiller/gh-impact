@@ -12,19 +12,21 @@
 
 ## Website and Data
 
+- [x] track example clicks differently
+- [x] track results - report as a special event or funnel
+- [x] no event for showing examples; new event for clicking examples
+- [x] new goal: click to report
+- [x] twitter card
+- [x] facebook opengraph
 - [ ] SQL pipeline for percentiles
 - [ ] "at a glance" summary page
 - [ ] search button should be on same line as query on small screens
-- [ ] track example clicks differently
-- [ ] track results - report as a special event or funnel
-- [ ] no event for showing examples; new event for clicking examples
-- [ ] new goal: click to report
 - [ ] add robots.txt
-- [ ] twitter card
-- [ ] facebook opengraph
 - [ ] ability to link specific results via social
 - [ ] center landing page
 - [ ] experiment: is leaderboard or report stickier?
+- [ ] mobile screen too wide: leaderboard
+- [ ] mobile screen too wide: index
 
 ## Report Enhancements
 
