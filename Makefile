@@ -6,7 +6,7 @@ favicon:
 	mv _artwork/favicon.ico .
 
 artwork:
-	cd _artwork && convert logo.png -resize 256x256 thumb-big.jpg
+	cd _artwork && convert logo.png -flatten -resize 256x256 thumb-big.jpg
 	mv _artwork/thumb-big.jpg media
 
 depends:
