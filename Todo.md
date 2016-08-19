@@ -18,15 +18,14 @@
 - [x] new goal: click to report
 - [x] twitter card
 - [x] facebook opengraph
-- [ ] SQL pipeline for percentiles
-- [ ] "at a glance" summary page
+- [x] add robots.txt
 - [ ] search button should be on same line as query on small screens
-- [ ] add robots.txt
-- [ ] ability to link specific results via social
 - [ ] center landing page
-- [ ] experiment: is leaderboard or report stickier?
 - [ ] mobile screen too wide: leaderboard
 - [ ] mobile screen too wide: index
+- [ ] "at a glance" summary page
+- [ ] ability to link specific results via social
+- [ ] SQL pipeline for percentiles
 
 ## Report Enhancements
 
@@ -34,6 +33,7 @@
 - [ ] star count for most popular project
 - [ ] organization size, for orgs
 - [ ] average stars
+- [ ] experiment: is leaderboard or report stickier?
 
 ## Public Relations
 
