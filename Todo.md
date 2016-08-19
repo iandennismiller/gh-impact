@@ -19,10 +19,10 @@
 - [x] twitter card
 - [x] facebook opengraph
 - [x] add robots.txt
+- [x] mobile screen too wide: index
+- [x] center landing page
 - [ ] search button should be on same line as query on small screens
-- [ ] center landing page
 - [ ] mobile screen too wide: leaderboard
-- [ ] mobile screen too wide: index
 - [ ] "at a glance" summary page
 - [ ] ability to link specific results via social
 - [ ] SQL pipeline for percentiles
