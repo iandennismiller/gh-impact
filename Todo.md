@@ -12,18 +12,6 @@
 
 ## Website and Data
 
-- [x] track example clicks differently
-- [x] track results - report as a special event or funnel
-- [x] no event for showing examples; new event for clicking examples
-- [x] new goal: click to report
-- [x] twitter card
-- [x] facebook opengraph
-- [x] add robots.txt
-- [x] mobile screen too wide: index
-- [x] center landing page
-- [x] search button should be on same line as query on small screens
-- [x] index page examples wrap on small screens
-- [x] mobile screen too wide: leaderboard
 - [ ] "at a glance" summary page
 - [ ] ability to link specific results via social
 - [ ] SQL pipeline for percentiles
@@ -38,13 +26,13 @@
 
 ## Public Relations
 
+- [x] register alternate domain names?
+- [x] add Disqus to blog posts
 - [ ] write blog post about this on academic blog
 - [ ] explanation powerpoint video
 - [ ] promotion: /r/programming, HN, twitter
 - [ ] contact mechanism: is Twitter good enough?
-- [ ] register alternate domain names?
 - [ ] latest blog post on front page?
-- [ ] add Disqus to blog posts
 
 # Completed Tasks
 
@@ -86,6 +74,18 @@
 - [x] new page: related work
 - [x] link to report on home page
 - [x] clean up old data files in _includes
+- [x] track example clicks differently
+- [x] track results - report as a special event or funnel
+- [x] no event for showing examples; new event for clicking examples
+- [x] new goal: click to report
+- [x] twitter card
+- [x] facebook opengraph
+- [x] add robots.txt
+- [x] mobile screen too wide: index
+- [x] center landing page
+- [x] search button should be on same line as query on small screens
+- [x] index page examples wrap on small screens
+- [x] mobile screen too wide: leaderboard
 
 ## Page: Findings
 
