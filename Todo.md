@@ -21,8 +21,9 @@
 - [x] add robots.txt
 - [x] mobile screen too wide: index
 - [x] center landing page
-- [ ] search button should be on same line as query on small screens
-- [ ] mobile screen too wide: leaderboard
+- [x] search button should be on same line as query on small screens
+- [x] index page examples wrap on small screens
+- [x] mobile screen too wide: leaderboard
 - [ ] "at a glance" summary page
 - [ ] ability to link specific results via social
 - [ ] SQL pipeline for percentiles
