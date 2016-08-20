@@ -26,8 +26,6 @@
 
 ## Public Relations
 
-- [x] register alternate domain names?
-- [x] add Disqus to blog posts
 - [ ] write blog post about this on academic blog
 - [ ] explanation powerpoint video
 - [ ] promotion: /r/programming, HN, twitter
@@ -113,3 +111,5 @@
 
 - [x] get a domain, probably
 - [x] submit to HCOMP 2016 before August 15 at 5pm PST
+- [x] register alternate domain names?
+- [x] add Disqus to blog posts

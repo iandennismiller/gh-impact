@@ -19,9 +19,11 @@ Of accounts with a *gh-impact* score, **n=146,652** belong to organizations (abo
 
 ### Organizations have higher impact than Individuals.
 
-
-
 Organizations (**mean(ghi)=1.86**) tend to have higher *gh-impact* scores than Individuals (**mean(ghi)=1.61**).
+
+<img class="inline_fact" src="/media/comparison-1.png" width="400">
+
+<!-- ![Comparison](/media/comparison-1.png) -->
 
 ### 10,266 accounts are in the 99th percentile.
 
