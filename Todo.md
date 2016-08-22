@@ -15,6 +15,7 @@
 - [ ] "at a glance" summary page
 - [ ] ability to link specific results via social
 - [ ] SQL pipeline for percentiles
+- [ ] support image zooming or expanding
 
 ## Report Enhancements
 
@@ -22,15 +23,15 @@
 - [ ] star count for most popular project
 - [ ] organization size, for orgs
 - [ ] average stars
-- [ ] experiment: is leaderboard or report stickier?
 
-## Public Relations
+## Audience
 
+- [x] contact mechanism: added disqus
 - [ ] write blog post about this on academic blog
 - [ ] explanation powerpoint video
 - [ ] promotion: /r/programming, HN, twitter
-- [ ] contact mechanism: is Twitter good enough?
 - [ ] latest blog post on front page?
+- [ ] experiment: is leaderboard or report stickier?
 
 # Completed Tasks
 
