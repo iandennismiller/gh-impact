@@ -10,14 +10,12 @@ artwork:
 	mv _artwork/thumb-big.jpg media
 
 depends:
-	curl -L -o _js/20_jekyll_toc.js https://raw.githubusercontent.com/ghiculescu/jekyll-table-of-contents/master/toc.js
-	curl -L -o _js/10_jquery.md5.js https://github.com/placemarker/jQuery-MD5/raw/master/jquery.md5.js
+	curl -L -o _js/_lib/jekyll_toc.js https://raw.githubusercontent.com/ghiculescu/jekyll-table-of-contents/master/toc.js
+	curl -L -o _js/_lib/jquery.md5.js https://github.com/placemarker/jQuery-MD5/raw/master/jquery.md5.js
+	curl -L -o _js/_lib/zoomify.min.js https://github.com/indrimuska/zoomify/raw/master/dist/zoomify.min.js
+	curl -L -o _sass/_zoomify.min.scss https://github.com/indrimuska/zoomify/raw/master/dist/zoomify.min.css
 
-js:
-	cat _js/*.js > js/gh-impact.js
-	@echo "Done"
-
-publish: js
+publish:
 	git commit -am "automatic publish"
 
-.PHONY: depends js publish favicon artwork
+.PHONY: depends publish favicon artwork

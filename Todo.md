@@ -32,6 +32,7 @@
 - [ ] promotion: /r/programming, HN, twitter
 - [ ] latest blog post on front page?
 - [ ] experiment: is leaderboard or report stickier?
+- [ ] send notice to ghtorrent folks
 
 # Completed Tasks
 

@@ -114,9 +114,9 @@
   padding: 1em;
 }
 
-.inline_fact {
+.image_frame {
     margin: 0px auto;
-    display: block;
+    text-align: center;
 }
 
 @include media-query($on-palm) {

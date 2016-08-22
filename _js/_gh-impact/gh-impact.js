@@ -35,3 +35,7 @@ var index_main = function() {
 
     init_search_handlers();
 }
+
+var zoomify_images = function() {
+    $('img.zoom').zoomify();
+}

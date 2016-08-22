@@ -14,7 +14,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://iandennismiller.github.io" # the base hostname & protocol for your site
 twitter_username: iandennismiller
 github_username:  iandennismiller
-include: ["_pages", "_html"]
+include: ["_pages", "_html", "_js"]
 exclude: ["CNAME", "new_post.py", "Readme.md", "Todo.md", "Makefile"]
 
 # Build settings
