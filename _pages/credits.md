@@ -15,6 +15,7 @@ menu: none
 - jekyll-table-of-contents: https://github.com/ghiculescu/jekyll-table-of-contents
 - minimaxir fte_theme: http://minimaxir.com/2015/02/ggplot-tutorial/
 - jQuery zoomify: https://github.com/indrimuska/zoomify
+- jekyll compress layout: https://github.com/penibelst/jekyll-compress-html
 
 ## Key Technology
 

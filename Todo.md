@@ -1,6 +1,6 @@
 # Todo
 
-## Questions
+## Analysis
 
 - [ ] what is the significance of this work?
 - [ ] how is this novel? fill related work (scan of arXiv, related works, etc)
@@ -12,10 +12,9 @@
 
 ## Website and Data
 
-- [x] "quick facts" summary page
-- [ ] ability to link specific results via social
 - [ ] SQL pipeline for percentiles
-- [ ] support image zooming or expanding
+- [ ] ability to link specific results via social
+- [ ] minify javascript
 
 ## Report Enhancements
 
@@ -26,13 +25,13 @@
 
 ## Audience
 
-- [x] contact mechanism: added disqus
 - [ ] write blog post about this on academic blog
 - [ ] explanation powerpoint video
 - [ ] promotion: /r/programming, HN, twitter
 - [ ] latest blog post on front page?
 - [ ] experiment: is leaderboard or report stickier?
 - [ ] send notice to ghtorrent folks
+- [ ] watermark images
 
 # Completed Tasks
 
@@ -86,8 +85,11 @@
 - [x] search button should be on same line as query on small screens
 - [x] index page examples wrap on small screens
 - [x] mobile screen too wide: leaderboard
+- [x] "quick facts" summary page
+- [x] support image zooming or expanding
+- [x] minify HTML
 
-## Page: Findings
+## Analysis
 
 - [x] density plot of scores to answer question: how do I compare?
 - [x] is there a substantial difference between individuals and organizations?
@@ -109,9 +111,10 @@
 - [x] format leader board side-by-side
 - [x] some users get 100th percentile...  99 is max
 
-## Public Relations
+## Audience
 
 - [x] get a domain, probably
 - [x] submit to HCOMP 2016 before August 15 at 5pm PST
 - [x] register alternate domain names?
 - [x] add Disqus to blog posts
+- [x] contact mechanism: added disqus
