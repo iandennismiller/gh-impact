@@ -17,6 +17,8 @@ The Leader Board is a list of accounts with the highest *gh-impact* scores.
     </div>
 </div>
 
+{% include promo-report-1.html %}
+
 <script>
 $(leaderboard_main);
 </script>

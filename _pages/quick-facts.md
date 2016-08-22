@@ -28,3 +28,11 @@ Organizations (**mean(ghi)=1.86**) tend to have higher *gh-impact* scores than I
 ### 10,266 accounts are in the 99th percentile.
 
 The cumulative distribution of *gh-impact* rapidly tops out; the 10,266 accounts with scores above 8 are in the 99th percentile.
+
+<img class="inline_fact" src="/media/area_99th_percentile_organizations-1.png" width="400">
+
+### Further Reading
+
+See <a class='internal' href="/report/">the first report</a> for a more detailed analysis.  More background information is also available in the [Questions and Answers](/answers/).
+
+{% include promo-report-1.html %}

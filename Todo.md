@@ -12,7 +12,7 @@
 
 ## Website and Data
 
-- [ ] "at a glance" summary page
+- [x] "quick facts" summary page
 - [ ] ability to link specific results via social
 - [ ] SQL pipeline for percentiles
 - [ ] support image zooming or expanding
