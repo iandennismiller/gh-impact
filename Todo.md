@@ -3,7 +3,8 @@
 ## Analysis
 
 - [ ] what is the significance of this work?
-- [ ] how is this novel? fill related work (scan of arXiv, related works, etc)
+- [ ] how is this novel?
+- [ ] fill related work (scan of arXiv, related works, etc)
 - [ ] once somebody has searched, what do they do next?  read full report?
 - [ ] how do we know gh-impact is valid?  because it correlates with popular projects, num stars, num followers
 - [ ] why is gh-impact better than raw rankings?  because it is a single metric that combines both quantity and quality; no raw stat does that
@@ -12,7 +13,14 @@
 
 ## Website and Data
 
-- [ ] ability to link specific results via social
+- [x] turn off disqus when development enabled
+- [ ] new quick fact: top 3 individuals and 3 orgs
+- [ ] new labels in quick facts pie chart: active vs inactive
+- [ ] fix width of quick facts pie chart plots
+- [ ] ability to link specific results via social.  how to embed with twitter share actions and cards?  new pages?
+- [ ] site help page, maybe
+- [ ] measure image zoom clicks
+- [ ] possibly use ggplot for watermarks?
 
 ## Report Enhancements
 
@@ -23,12 +31,18 @@
 
 ## Audience
 
-- [ ] write blog post about this on academic blog
 - [ ] explanation powerpoint video
+- [ ] replace 2nd paragraph of about page with video
+- [ ] write a blog post about a specific finding
+- [ ] write blog post about this on academic blog
+- [ ] send notice to ghtorrent folks
 - [ ] promotion: /r/programming, HN, twitter
 - [ ] experiment: is leaderboard or report stickier?
-- [ ] send notice to ghtorrent folks
-- [ ] watermark images
+- [ ] consider the upsell desired action: mailing list? subscribe? stay in touch? order?
+
+# Notes
+
+- an observation: there are two types of target objects on the site: account profile metrics and analysis/findings
 
 # Completed Tasks
 
@@ -87,6 +101,7 @@
 - [x] minify HTML
 - [x] R-JSON pipeline for percentiles
 - [x] minify javascript
+- [x] watermark images
 
 ## Analysis
 
