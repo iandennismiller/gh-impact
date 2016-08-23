@@ -26,4 +26,22 @@ publish:
 server:
 	JEKYLL_ENV=production jekyll serve
 
-.PHONY: depends publish favicon artwork minify server
+watermark:
+	convert -size 300x50 xc:grey30 -font Arial -pointsize 20 -gravity center \
+		-draw "fill grey70  text 0,0  'www.gh-impact.com'" \
+		stamp_fgnd.png
+	convert -size 300x50 xc:black -font Arial -pointsize 20 -gravity center \
+		-draw "fill white  text  1,1  'www.gh-impact.com'  \
+			text  0,0  'www.gh-impact.com'  \
+			fill black  text -1,-1 'www.gh-impact.com'" \
+		+matte stamp_mask.png
+	composite -compose CopyOpacity  stamp_mask.png  stamp_fgnd.png  stamp.png
+	mogrify -trim +repage stamp.png
+
+	for i in media/*.png; do \
+		composite -dissolve 25% -gravity southeast -geometry +5+5 stamp.png $$i out.png; \
+		mv out.png $$i; \
+	done
+	rm stamp.png stamp_mask.png stamp_fgnd.png
+
+.PHONY: depends publish favicon artwork minify server watermark
