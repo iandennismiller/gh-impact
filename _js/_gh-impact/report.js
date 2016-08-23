@@ -71,17 +71,17 @@ var show_percentile = function(score, account_type) {
     var result;
 
     if (account_type == 1) { // individual
-        relevant_pct = percentiles[0];
+        relevant_pct = percentiles["individuals"];
     }
     else { //organziation
-        relevant_pct = percentiles[1];
+        relevant_pct = percentiles["organizations"];
     }
 
     if (score > 10) {
         result = 99;
     }
     else {
-        result = Math.round(relevant_pct[score] * 100);
+        result = Math.round(relevant_pct[score]);
     }
 
     if (result == 100) {

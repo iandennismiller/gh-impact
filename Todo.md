@@ -12,9 +12,7 @@
 
 ## Website and Data
 
-- [ ] SQL pipeline for percentiles
 - [ ] ability to link specific results via social
-- [ ] minify javascript
 
 ## Report Enhancements
 
@@ -28,7 +26,6 @@
 - [ ] write blog post about this on academic blog
 - [ ] explanation powerpoint video
 - [ ] promotion: /r/programming, HN, twitter
-- [ ] latest blog post on front page?
 - [ ] experiment: is leaderboard or report stickier?
 - [ ] send notice to ghtorrent folks
 - [ ] watermark images
@@ -88,6 +85,8 @@
 - [x] "quick facts" summary page
 - [x] support image zooming or expanding
 - [x] minify HTML
+- [x] R-JSON pipeline for percentiles
+- [x] minify javascript
 
 ## Analysis
 
@@ -118,3 +117,4 @@
 - [x] register alternate domain names?
 - [x] add Disqus to blog posts
 - [x] contact mechanism: added disqus
+- [x] latest blog post on front page?  no.  vetoed.

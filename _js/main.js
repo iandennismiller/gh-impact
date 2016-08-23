@@ -13,7 +13,7 @@ permalink: /js/gh-impact.js
 
 {% include_relative _data/leaderboard_individuals.js %}
 {% include_relative _data/leaderboard_organizations.js %}
-{% include_relative _data/percentiles.js %}
+{% include_relative _data/analysis_percentiles.js %}
 
 {% include_relative _gh-impact/examples.js %}
 {% include_relative _gh-impact/leaderboard.js %}
