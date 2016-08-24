@@ -59,6 +59,10 @@ var render_report = function(account_data) {
     }
     show_percentile(account_data["s"], account_data["t"]);
     document.title = "gh-impact report: " + account_data["l"];
+    $("#account_name a").click(function() {
+        trackOutboundLink($(this).attr("href"));
+        return(false);
+    });
 }
 
 var render_not_found = function() {

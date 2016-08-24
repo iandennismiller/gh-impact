@@ -2,7 +2,6 @@
 
 ## Analysis
 
-- [x] once somebody has searched, what do they do next?  read full report?
 - [ ] what is the significance of this work?
 - [ ] how is this novel?
 - [ ] how do we know gh-impact is valid?  because it correlates with popular projects, num stars, num followers
@@ -12,19 +11,13 @@
 
 ## Data
 
-- [x] new labels in quick facts pie chart: active vs inactive
-- [x] fix width of quick facts pie chart plots
-- [x] move watermark into R pipeline makefile; whitelist specific images to copy
 - [ ] need to remove deleted accounts
 
 ## Website
 
-- [x] remove findings page
-- [x] subscription page: quarterly mailing, pricing
-- [x] measure image zoom clicks... meh...  no
+- [x] measure clicks to github via reports
 - [ ] ability to link specific results via social.  how to embed with twitter share actions and cards?  new pages?
 - [ ] site help page, maybe
-- [ ] measure clicks to github via reports
 - [ ] signup for subscription: google form, analytics event, cgi, other?
 - [ ] fill related work (scan of arXiv, related works, etc)
 
@@ -44,14 +37,24 @@
 
 ## Blog
 
-- [x] prune silly blog posts
-- [x] social share buttons
-- [ ] write a blog post about a specific finding
-- [ ] write blog post about this on academic blog
-- [ ] write script to download and combine JSON data for use in R (include CSV snapshot)
+- [x] most recent post on front page, after all...
+- [x] write script to download and combine JSON data for use in R (include CSV snapshot)
 - [ ] custom twitter and facebook cards
-- [ ] most recent post on front page, after all...
+- [ ] write blog post about this on academic blog
+- [ ] write a blog post about a specific finding
 
 # Notes
 
 - an observation: there are two types of target objects on the site: account profile metrics and analysis/findings
+
+# Done
+
+- [x] prune silly blog posts
+- [x] social share buttons
+- [x] remove findings page
+- [x] subscription page: quarterly mailing, pricing
+- [x] measure image zoom clicks... meh...  no
+- [x] new labels in quick facts pie chart: active vs inactive
+- [x] fix width of quick facts pie chart plots
+- [x] move watermark into R pipeline makefile; whitelist specific images to copy
+- [x] once somebody has searched, what do they do next?  read full report?

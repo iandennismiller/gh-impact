@@ -9,7 +9,7 @@
         <ul class="contact-list">
           <!-- <li>{{ site.title }}</li> -->
           <li>
-            {% include icon-www.html url="http://imiller.utsc.utoronto.ca" %}
+            {% include icon-www.html url="http://www.gh-impact.com" text="www.gh-impact.com" %}
           </li>
         </ul>
       </div>
@@ -31,7 +31,16 @@
       </div>
 
       <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
+        <div>{{ site.description }}</div>
+
+        <div id="blogpost">
+          Latest article: 
+          {% for post in site.posts limit:1 %}
+              <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+              <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          {% endfor %}
+        </div>
+
       </div>
     </div>
 
