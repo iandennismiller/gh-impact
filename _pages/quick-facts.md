@@ -29,10 +29,24 @@ The cumulative distribution of *gh-impact* rapidly tops out; the 10,266 accounts
 
 {% include image-zoom.html url="/media/area_99th_percentile_organizations-1.png" width=400 %}
 
-### Further Reading
+### The accounts with the highest gh-impact are ...
 
-See <a class='internal' href="/report/">the first report</a> for a more detailed analysis.  More background information is also available in the [Questions and Answers](/answers/).
+The full [leader board](/leaderboard) lists the top 20 individual and organization accounts.  The top 3 from each list are:
 
+#### Individuals
+
+0. [sindresorhus](/#sindresorhus), publisher of curated "awesome" project lists
+1. [substack](/#substack), publisher of many node.js projects
+2. [Tj](/#Tj), publisher of many node.js projects
+
+#### Organizations
+
+0. [google](/#google), a search/information company
+1. [facebook](/#facebook), a social graph company
+2. [apache](/#apache), a web infrastructure foundation
+
+<div style="font-size: 2em; text-align: center; margin-top: 1em;">
 {% include promo-report-1.html %}
+</div>
 
 {% include image-zoom-init.html %}

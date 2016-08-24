@@ -27,3 +27,14 @@ menu: none
 - Python
 - Flask-Diamond
 - SQLAlchemy
+
+## Images used in presentations
+
+- trees: https://www.pexels.com/photo/nature-forest-trees-bamboo-5091/
+- stone: https://www.pexels.com/photo/monochrome-no-person-food-dark-112649/
+- road: https://www.pexels.com/photo/road-sky-clouds-cloudy-215/
+- crowd: https://www.pexels.com/photo/city-sunny-people-street-2752/
+- science: https://www.pexels.com/photo/scientific-calculator-ii-5775/
+- work: https://www.pexels.com/photo/black-and-white-city-man-people-1984/
+- future: https://www.pexels.com/photo/road-street-desert-industry-932/
+
