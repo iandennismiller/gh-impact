@@ -10,3 +10,7 @@ For more information about these licenses, see the following:
 
 - [Database License Summary](/licenses/database-license.html)
 - [Website License Summary](/licenses/website-license.html)
+
+## Third-party Properties
+
+This project builds upon [the work of many other people](/credits/).  I wish to express my thanks and gratitude for their efforts and for licensing their work in such a way that I may include it in the current work.

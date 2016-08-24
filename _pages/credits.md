@@ -5,6 +5,10 @@ permalink: /credits/
 menu: none
 ---
 
+This project builds upon the work of many other people.  I am forever grateful for the work they have done and for licensing their work so that I may use it.
+
+Sometimes, a technology becomes so foundational that it becomes almost invisible.  If I've forgotten to mention anybody or anything for this reason or for any other reason, please notify me.
+
 ## Credits
 
 - github data dumps: http://ghtorrent.org
@@ -16,6 +20,7 @@ menu: none
 - minimaxir fte_theme: http://minimaxir.com/2015/02/ggplot-tutorial/
 - jQuery zoomify: https://github.com/indrimuska/zoomify
 - jekyll compress layout: https://github.com/penibelst/jekyll-compress-html
+- Hacker News icon: http://www.flaticon.com/free-icon/hacker-news-logo_34439
 
 ## Key Technology
 

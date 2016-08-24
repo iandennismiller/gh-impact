@@ -12,8 +12,14 @@ layout: default
     {{ content }}
   </div>
 
+  <div class="social">
+    {% include share-twitter.html url=page.url text=page.title %}
+    {% include share-hacker-news.html url=page.url text=page.title %}
+    {% include share-facebook.html url=page.url text=page.title %}
+  </div>
+
 </article>
 
 {% if jekyll.environment == "production" %}
-{% include disqus-comments.html baseurl="http://www.gh-impact.com/" url=page.url %}
+{% include disqus-comments.html url=page.url %}
 {% endif %}
