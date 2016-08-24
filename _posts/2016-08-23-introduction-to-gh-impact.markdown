@@ -3,6 +3,8 @@ layout:     post
 title:      Introduction to gh-impact
 date:       2016-08-23 20:11:55
 tags:       video
+image:      http://www.gh-impact.com/media/thumb-big.jpg
+excerpt:    Introducing gh-impact.  gh-impact is a measure of influence on GitHub.  Accounts that publish lots of popular projects will have higher gh-impact scores.  In this video, I will discuss what exactly gh-impact is, where it comes from, who it applies to, why gh-impact matters at all, and how you can use gh-impact in your own work.
 ---
 
 <div style="text-align: center;">

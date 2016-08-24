@@ -1,8 +1,10 @@
 ---
-layout: page
-title: Quick Facts
-permalink: /facts/
-menu: main
+layout:     page
+title:      Quick Facts
+permalink:  /facts/
+menu:       main
+image:      http://www.gh-impact.com/media/thumb-big.jpg
+excerpt:    Quick Facts about gh-impact - 8% of GitHub accounts are active; 13.8% of active accounts belong to organizations; Organizations have higher impact than Individuals; 10,266 accounts are in the 99th percentile. gh-impact is a measure of influence on GitHub.
 ---
 
 ### 8% of GitHub accounts are active.

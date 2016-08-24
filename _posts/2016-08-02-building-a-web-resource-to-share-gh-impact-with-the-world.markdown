@@ -3,6 +3,8 @@ layout:     post
 title:      Building a web resource to share gh-impact with the world
 date:       2016-08-02 14:00:00
 tags:       update
+image:      http://www.gh-impact.com/media/thumb-big.jpg
+excerpt:    One of the coolest parts about a project like gh-impact is the potential for interaction.  The first question that comes to my mind is - what's my gh-impact score?  In order to enable online users to easily answer that question for themselves, we're going to need a search interface...
 ---
 
 One of the coolest parts about a project like *gh-impact* is the potential for interaction.  The first question that comes to my mind is: what's my *gh-impact* score?  In order to enable online users to easily answer that question for themselves, we're going to need a search interface.

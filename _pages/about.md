@@ -1,8 +1,10 @@
 ---
-layout: page
-title: About
-permalink: /about/
-menu: main
+layout:     page
+title:      About
+permalink:  /about/
+menu:       main
+image:      http://www.gh-impact.com/media/thumb-big.jpg
+excerpt:    The about page is provides a brief introduction to gh-impact. gh-impact is a measure of influence on GitHub.
 ---
 
 *gh-impact* is a measure of influence on GitHub.

@@ -15,7 +15,6 @@
 
 ## Website
 
-- [x] measure clicks to github via reports
 - [ ] ability to link specific results via social.  how to embed with twitter share actions and cards?  new pages?
 - [ ] site help page, maybe
 - [ ] signup for subscription: google form, analytics event, cgi, other?
@@ -34,12 +33,13 @@
 - [ ] promotion: /r/programming, HN, twitter
 - [ ] experiment: is leaderboard or report stickier?
 - [ ] consider the upsell desired action: mailing list? subscribe? stay in touch? order?
+- [ ] 30-second intro video
+- [ ] 30-second wordless video and gif
 
 ## Blog
 
-- [x] most recent post on front page, after all...
-- [x] write script to download and combine JSON data for use in R (include CSV snapshot)
-- [ ] custom twitter and facebook cards
+- [x] custom twitter cards
+- [x] custom facebook cards
 - [ ] write blog post about this on academic blog
 - [ ] write a blog post about a specific finding
 
@@ -58,3 +58,6 @@
 - [x] fix width of quick facts pie chart plots
 - [x] move watermark into R pipeline makefile; whitelist specific images to copy
 - [x] once somebody has searched, what do they do next?  read full report?
+- [x] most recent post on front page, after all...
+- [x] write script to download and combine JSON data for use in R (include CSV snapshot)
+- [x] measure clicks to github via reports

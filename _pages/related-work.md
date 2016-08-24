@@ -1,8 +1,11 @@
 ---
-layout: page
-title: Related Work
-permalink: /related-work/
-menu: none
+layout:     page
+title:      Related Work
+permalink:  /related-work/
+menu:       none
+image:      http://www.gh-impact.com/media/thumb-big.jpg
+excerpt:    Related Work
+published:  false
 ---
 
 ## GitHub Data Challenges

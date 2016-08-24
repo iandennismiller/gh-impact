@@ -3,6 +3,8 @@ layout:     post
 title:      How to scrape the gh-impact data set
 date:       2016-08-24 15:25:01
 tags:       howto
+image:      http://www.gh-impact.com/media/thumb-big.jpg
+excerpt:    The gh-impact score data are available from this website, and this post will explain how to obtain a CSV file.  I used this procedure to create a CSV file that is current as of 2016-08-24, which can be downloaded here.  To obtain fresh data, keep reading this post.
 ---
 
 The *gh-impact* score data are available from this website, and this post will explain how to obtain a CSV file.  I used this procedure to create a CSV file that is current as of 2016-08-24, [which can be downloaded here](/media/gh-impact-2016-08-24.csv.gz).  To obtain fresh data, keep reading this post.

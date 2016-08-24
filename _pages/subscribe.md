@@ -1,8 +1,11 @@
 ---
-layout: page
-title: Subscribe
-permalink: /subscribe/
-menu: none
+layout:     page
+title:      Subscribe
+permalink:  /subscribe/
+menu:       none
+image:      http://www.gh-impact.com/media/thumb-big.jpg
+excerpt:    gh-impact is a premiere publisher of open source intelligence findings. Starting Q1 2017, gh-impact will begin publishing a high-quality quarterly review containing our latest findings, sometimes weeks or even months before these findings are publicly released.
+published:  false
 ---
 
 **Notice: Draft**  The following is just a plan, right now.

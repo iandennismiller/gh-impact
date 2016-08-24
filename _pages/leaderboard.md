@@ -1,8 +1,10 @@
 ---
-layout: page
-title: Leader Board
-permalink: /leaderboard/
-menu: main
+layout:     page
+title:      Leader Board
+permalink:  /leaderboard/
+menu:       main
+image:      http://www.gh-impact.com/media/thumb-big.jpg
+excerpt:    The Leader Board is a list of accounts with the highest gh-impact scores. gh-impact is a measure of influence on GitHub.
 ---
 
 The Leader Board is a list of accounts with the highest *gh-impact* scores.

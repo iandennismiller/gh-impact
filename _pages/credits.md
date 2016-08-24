@@ -1,8 +1,10 @@
 ---
-layout: page
-title: Credits and Thanks
-permalink: /credits/
-menu: none
+layout:     page
+title:      Credits and Thanks
+permalink:  /credits/
+menu:       none
+image:      http://www.gh-impact.com/media/thumb-big.jpg
+excerpt:    This project builds upon the work of many other people. I wish to express my thanks and gratitude for their efforts and for licensing their work in such a way that I may include it in the current work. gh-impact is a measure of influence on GitHub.
 ---
 
 This project builds upon the work of many other people.  I am forever grateful for the work they have done and for licensing their work so that I may use it.

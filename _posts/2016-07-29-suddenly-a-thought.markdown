@@ -3,6 +3,8 @@ layout:     post
 title:      Suddenly, a thought
 date:       2016-07-29
 tags:       personal
+image:      http://www.gh-impact.com/media/thumb-big.jpg
+excerpt:    Academia really isn't so different from GitHub.  Stars are kindof like citations, and uploading is kindof like publishing.  Perhaps the architecture of academia is kindof like GitHub, too?
 ---
 
 Here in [my journal](http://gthnk.com) is an entry:

@@ -12,6 +12,9 @@ layout:     post
 title:      {0}
 date:       {1}
 tags:       {2}
+image:      http://www.gh-impact.com/media/thumb-big.jpg
+excerpt:    This blurb ends up in twitter and facebook cards.
+published:  false
 ---
 
 """
