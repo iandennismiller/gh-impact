@@ -1,5 +1,6 @@
 ---
 layout:     post
+category:   blog
 title:      Suddenly, a thought
 date:       2016-07-29
 tags:       personal

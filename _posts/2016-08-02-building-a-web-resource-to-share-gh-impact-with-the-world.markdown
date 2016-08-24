@@ -1,5 +1,6 @@
 ---
 layout:     post
+category:   blog
 title:      Building a web resource to share gh-impact with the world
 date:       2016-08-02 14:00:00
 tags:       update

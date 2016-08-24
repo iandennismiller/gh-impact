@@ -1,5 +1,13 @@
 # Todo
 
+## Report
+
+- [ ] need to remove deleted accounts
+- [ ] star count for most popular project
+- [ ] organization size, for orgs
+- [ ] average stars
+- [ ] use github API to retrieve other details about the user
+
 ## Analysis
 
 - [ ] what is the significance of this work?
@@ -9,23 +17,14 @@
 - [ ] effect of project language upon gh-impact?  meh... lost interest...
 - [ ] do accounts with lots of follows give stars more effectively (i.e. attach to high gh-impact projects more often)?
 
-## Data
-
-- [ ] need to remove deleted accounts
-
 ## Website
 
 - [ ] ability to link specific results via social.  how to embed with twitter share actions and cards?  new pages?
 - [ ] site help page, maybe
 - [ ] signup for subscription: google form, analytics event, cgi, other?
 - [ ] fill related work (scan of arXiv, related works, etc)
-
-## Report
-
-- [ ] use github API to retrieve other details about the user
-- [ ] star count for most popular project
-- [ ] organization size, for orgs
-- [ ] average stars
+- [ ] write blog post about this on academic blog
+- [ ] write a blog post about a specific finding
 
 ## Audience
 
@@ -35,13 +34,6 @@
 - [ ] consider the upsell desired action: mailing list? subscribe? stay in touch? order?
 - [ ] 30-second intro video
 - [ ] 30-second wordless video and gif
-
-## Blog
-
-- [x] custom twitter cards
-- [x] custom facebook cards
-- [ ] write blog post about this on academic blog
-- [ ] write a blog post about a specific finding
 
 # Notes
 
@@ -61,3 +53,5 @@
 - [x] most recent post on front page, after all...
 - [x] write script to download and combine JSON data for use in R (include CSV snapshot)
 - [x] measure clicks to github via reports
+- [x] custom twitter cards
+- [x] custom facebook cards

@@ -9,6 +9,7 @@ from datetime import datetime
 TEMPLATE = """\
 ---
 layout:     post
+category:   blog
 title:      {0}
 date:       {1}
 tags:       {2}

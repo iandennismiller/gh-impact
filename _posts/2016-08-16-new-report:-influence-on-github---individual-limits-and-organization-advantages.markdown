@@ -1,5 +1,6 @@
 ---
 layout:     post
+category:   blog
 title:      Influence on GitHub - Individual Limits and Organization Advantages
 date:       2016-08-16 21:37:01
 tags:       report

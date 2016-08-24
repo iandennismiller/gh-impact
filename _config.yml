@@ -16,6 +16,7 @@ twitter_username: iandennismiller
 github_username:  iandennismiller
 include: ["_pages", "_html", "_js"]
 exclude: ["CNAME", "new_post.py", "Readme.md", "Todo.md", "Makefile"]
+permalink: none
 
 # Build settings
 markdown: kramdown

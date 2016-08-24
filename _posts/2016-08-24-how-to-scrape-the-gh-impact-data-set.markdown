@@ -1,5 +1,6 @@
 ---
 layout:     post
+category:   blog
 title:      How to scrape the gh-impact data set
 date:       2016-08-24 15:25:01
 tags:       howto

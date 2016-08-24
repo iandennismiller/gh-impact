@@ -1,5 +1,6 @@
 ---
 layout:     post
+category:   blog
 title:      Introduction to gh-impact
 date:       2016-08-23 20:11:55
 tags:       video
