@@ -16,9 +16,14 @@ depends:
 	curl -L -o _js/_lib/zoomify.min.js https://github.com/indrimuska/zoomify/raw/master/dist/zoomify.min.js
 	curl -L -o _sass/_zoomify.min.scss https://github.com/indrimuska/zoomify/raw/master/dist/zoomify.min.css
 
-minify:
-	java -jar ~/Library/Code/compiler.jar --js _site/js/gh-impact.js --js_output_file js/gh-impact.min.js
+css:
 	python -m csscompressor -o css/gh-impact.min.css _site/css/gh-impact.css
+
+js:
+	java -jar ~/Library/Code/compiler.jar --js _site/js/gh-impact.js --js_output_file js/gh-impact.min.js
+
+minify: js css
+	@echo "done"
 
 publish:
 	git commit -am "automatic publish"
@@ -26,22 +31,4 @@ publish:
 server:
 	JEKYLL_ENV=production jekyll serve
 
-watermark:
-	convert -size 300x50 xc:grey30 -font Arial -pointsize 20 -gravity center \
-		-draw "fill grey70  text 0,0  'www.gh-impact.com'" \
-		stamp_fgnd.png
-	convert -size 300x50 xc:black -font Arial -pointsize 20 -gravity center \
-		-draw "fill white  text  1,1  'www.gh-impact.com'  \
-			text  0,0  'www.gh-impact.com'  \
-			fill black  text -1,-1 'www.gh-impact.com'" \
-		+matte stamp_mask.png
-	composite -compose CopyOpacity  stamp_mask.png  stamp_fgnd.png  stamp.png
-	mogrify -trim +repage stamp.png
-
-	for i in media/*.png; do \
-		composite -dissolve 25% -gravity southeast -geometry +5+5 stamp.png $$i out.png; \
-		mv out.png $$i; \
-	done
-	rm stamp.png stamp_mask.png stamp_fgnd.png
-
-.PHONY: depends publish favicon artwork minify server watermark
+.PHONY: depends publish favicon artwork minify server js css
