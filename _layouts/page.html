@@ -11,4 +11,10 @@ layout: default
     {{ content }}
   </div>
 
+  <div class="social">
+    {% include share-twitter.html url=page.url text=page.title %}
+    {% include share-hacker-news.html url=page.url text=page.title %}
+    {% include share-facebook.html url=page.url text=page.title %}
+  </div>
+
 </article>

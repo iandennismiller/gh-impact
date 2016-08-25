@@ -19,6 +19,7 @@
 
 ## Website
 
+- [x] social buttons on pages
 - [ ] ability to link specific results via social.  how to embed with twitter share actions and cards?  new pages?
 - [ ] site help page, maybe
 - [ ] signup for subscription: google form, analytics event, cgi, other?
