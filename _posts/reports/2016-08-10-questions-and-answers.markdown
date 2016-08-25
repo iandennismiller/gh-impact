@@ -1,10 +1,11 @@
 ---
 layout:     page
-title:      Q&A
-permalink:  /answers/
+category:   reports
+title:      Questions and Answers
+date:       2016-08-10
 menu:       main
 image:      http://www.gh-impact.com/media/thumb-big.jpg
-excerpt:    This page contains questions and Answers about gh-impact, such as - How is influence calculated? Can gh-impact be manipulated? gh-impact is a measure of influence on GitHub.
+excerpt:    Questions and Answers about gh-impact, such as - How is influence calculated? Can gh-impact be manipulated? gh-impact is a measure of influence on GitHub.
 ---
 
 {% include toc.html %}

@@ -8,7 +8,7 @@ image:      http://www.gh-impact.com/media/thumb-big.jpg
 excerpt:    gh-impact is a new measure of influence on GitHub. In this paper, we introduce gh-impact and use it to examine differences between Individual and Organizational GitHub accounts. Among our key findings, we find gh-impact increases as the size of organizations increase, suggesting that individuals may have a comparative disadvantage.
 ---
 
-I've released a preliminary report called [Influence on GitHub - Individual Limits and Organization Advantages](/report/).  Here's the abstract:
+I've released a preliminary report called [Influence on GitHub - Individual Limits and Organization Advantages](/reports/influence-on-github.html).  Here's the abstract:
 
 > *gh-impact* is a new measure of influence on GitHub. In this paper, we introduce *gh-impact* and use it to examine differences between Individual and Organizational GitHub accounts. Among our key findings, we find *gh-impact* increases as the size of organizations increase, suggesting that individuals may have a comparative disadvantage. We also find evidence for a ceiling effect of the impact of Individuals. While some individuals manage extremely successful projects, it is rare to find Individuals who manage multiple projects of a similar caliber. Organizations are not inherently resource- bound and can sustain many projects in parallel, leading to greater overall work impact and a correspondingly higher *gh-impact* score.
 

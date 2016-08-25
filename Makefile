@@ -28,7 +28,13 @@ minify: js css
 publish:
 	git commit -am "automatic publish"
 
-server:
-	JEKYLL_ENV=production jekyll serve
+serve:
+	bundle exec jekyll serve
+
+production:
+	JEKYLL_ENV=production bundle exec jekyll serve
+
+rubygems:
+	bundle install --path vendor/bundle
 
 .PHONY: depends publish favicon artwork minify server js css

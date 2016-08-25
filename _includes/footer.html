@@ -11,20 +11,20 @@
           <li>
             {% include icon-www.html url="http://www.gh-impact.com" text="www.gh-impact.com" %}
           </li>
+          {% if site.twitter_username %}
+          <li>
+            {% include icon-twitter.html username=site.twitter_username %}
+          </li>
+          {% endif %}
         </ul>
       </div>
 
       <div class="footer-col footer-col-2">
+      <img src="/media/thumb-big.jpg" width="50">
         <ul class="social-media-list">
           {% if site.github_username %}
           <li>
             {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
           </li>
           {% endif %}
         </ul>

@@ -10,6 +10,7 @@ excerpt:    The about page is provides a brief introduction to gh-impact. gh-imp
 *gh-impact* is a measure of influence on GitHub.
 *gh-impact* is based upon the stars a project receives: an account has a *gh-impact* score of **n** if they have **n** projects with **n** stars.
 Higher *gh-impact* scores correspond to accounts that have many well-used projects.
+For more detailed information, see our [reports](/reports/).
 
 ### Introduction to *gh-impact*
 

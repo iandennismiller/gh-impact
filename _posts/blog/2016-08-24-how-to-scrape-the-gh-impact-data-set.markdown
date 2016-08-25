@@ -8,7 +8,7 @@ image:      http://www.gh-impact.com/media/thumb-big.jpg
 excerpt:    The gh-impact score data are available from this website, and this post will explain how to obtain a CSV file.  I used this procedure to create a CSV file that is current as of 2016-08-24, which can be downloaded here.  To obtain fresh data, keep reading this post.
 ---
 
-The *gh-impact* score data are available from this website, and this post will explain how to obtain a CSV file.  I used this procedure to create a CSV file that is current as of 2016-08-24, [which can be downloaded here](/media/gh-impact-2016-08-24.csv.gz).  To obtain fresh data, keep reading this post.
+The *gh-impact* score data are available from this website, and this post will explain how to obtain a CSV file.  I used this procedure to create a CSV file that is current as of 2016-08-24, [which can be downloaded here](/media/scrape-gh-impact/gh-impact-2016-08-24.csv.gz).  To obtain fresh data, keep reading this post.
 
 The data stored on the website are optimized for online search, so they use the JSON file format.  Most researchers would probably prefer a CSV, which is much easier to load into R or Excel.
 
@@ -47,4 +47,4 @@ for account in full_data.values():
 
 {% endhighlight %}
 
-This [script can be downloaded](/media/download-gh-impact.py) to run on your own machine.  Be sure to install the requests library by running `pip install requests`.  Finally, run `python download-gh-impact.py` and wait about 9 minutes for the CSV to be created.
+This [script can be downloaded](/media/scrape-gh-impact/download-gh-impact.py) to run on your own machine.  Be sure to install the requests library by running `pip install requests`.  Finally, run `python download-gh-impact.py` and wait about 9 minutes for the CSV to be created.

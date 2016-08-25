@@ -2,11 +2,14 @@
 
 ## Report
 
-- [ ] need to remove deleted accounts
+- [x] need to remove deleted accounts
 - [ ] star count for most popular project
 - [ ] organization size, for orgs
 - [ ] average stars
 - [ ] use github API to retrieve other details about the user
+- [ ] consider putting the account-deleted column into canonical data and filtering in R
+- [ ] make top-3 into a PNG, not HTML
+- [ ] add "generated on" date to leaderboard
 
 ## Analysis
 
@@ -20,12 +23,19 @@
 ## Website
 
 - [x] social buttons on pages
+- [x] group items in media folder by post
+- [x] move quick facts to reports collection
+- [x] new page /reports that lists all reports in order
+- [x] report list uses thumbs and excerpts to build fancy index
+- [x] each report has custom thumbnail
+- [x] sitemap Jekyll plugin
 - [ ] ability to link specific results via social.  how to embed with twitter share actions and cards?  new pages?
 - [ ] site help page, maybe
 - [ ] signup for subscription: google form, analytics event, cgi, other?
 - [ ] fill related work (scan of arXiv, related works, etc)
 - [ ] write blog post about this on academic blog
 - [ ] write a blog post about a specific finding
+- [ ] move hosting to NFSN but keep data on github
 
 ## Audience
 
@@ -35,6 +45,7 @@
 - [ ] consider the upsell desired action: mailing list? subscribe? stay in touch? order?
 - [ ] 30-second intro video
 - [ ] 30-second wordless video and gif
+- [ ] experiment: which reports to add to main menu?
 
 # Notes
 

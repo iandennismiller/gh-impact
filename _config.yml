@@ -11,12 +11,15 @@ title: gh-impact
 description: > # this means to ignore newlines until "baseurl:"
   <b>gh-impact</b> is a measure of influence on GitHub.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://iandennismiller.github.io" # the base hostname & protocol for your site
+url: "http://www.gh-impact.com" # the base hostname & protocol for your site
 twitter_username: iandennismiller
-github_username:  iandennismiller
+# github_username:  iandennismiller
 include: ["_pages", "_html", "_js"]
-exclude: ["CNAME", "new_post.py", "Readme.md", "Todo.md", "Makefile"]
+exclude: ["CNAME", "new.py", "Readme.md", "Todo.md", "Makefile", "vendor", "Gemfile", "Gemfile.lock"]
 permalink: none
 
 # Build settings
 markdown: kramdown
+
+gems:
+  - jekyll-sitemap

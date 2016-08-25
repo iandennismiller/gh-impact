@@ -1,17 +1,14 @@
 ---
 layout:     page
-title:      Report
-permalink:  /report/
+category:   reports
+title:      Influence on GitHub - Individual Limits and Organization Advantages
+date:       2016-08-15
 menu:       main
-image:      http://www.gh-impact.com/media/thumb-big.jpg
+image:      /media/influence-on-github/stars_penalty_plot-1.png
 excerpt:    gh-impact is a new measure of influence on GitHub. In this paper, we introduce gh-impact and use it to examine differences between Individual and Organizational GitHub accounts. Among our key findings, we find gh-impact increases as the size of organizations increase, suggesting that individuals may have a comparative disadvantage.
 ---
 
-<span style="font-size: 30pt;">
-    Influence on GitHub - Individual Limits and Organization Advantages
-</span>
-
-<a class="internal" href="/media/gh-impact-report-1.pdf">Download report PDF</a>
+<a class="internal" href="/media/influence-on-github/gh-impact-report-1.pdf">Download report PDF</a>
 
 Ian Dennis Miller<br/>
 August 15, 2016
@@ -42,11 +39,11 @@ To explain the discrepancy in *gh-impact* between Individuals and Organizations,
 
 In Figure 1, we used a Monte Carlo Bootstrap method to estimate size of the penalty effect for Individuals. To see this effect a different way, we plotted *gh-impact* against each account’s most popular project in Figure 2. Although Organizations continue to gain *gh-impact* as their projects become more popular, Individuals present a ceiling effect that no amount of popularity can overcome.
 
-![Popularity Penalty to Individuals](/media/stars_penalty_plot-1.png)
+![Popularity Penalty to Individuals](/media/influence-on-github/stars_penalty_plot-1.png)
 
 Figure 1: The penalty effect for Individuals is significantly below 0. For Organizations, the penalty effect is not significant.
 
-![Max Stars and Impact](/media/max_stars_impact-1.png)
+![Max Stars and Impact](/media/influence-on-github/max_stars_impact-1.png)
 
 Figure 2: Individuals *gh-impact* appears to stop increasing around ghi = 20. Organizations are not bounded on *gh-impact*.
 
@@ -54,7 +51,7 @@ Figure 2: Individuals *gh-impact* appears to stop increasing around ghi = 20. Or
 
 Organizations can help coordinate work, but scaling problems can also lead to disorganization and work loss. If the GitHub platform successfully helps Organizations cope with growth, then we would expect to see increases in *gh-impact* as organization size grows. The Pearson’s correlation of *gh-impact* and membership is significant, r = 0.51, (p < 0.01). This is a large effect (Cohen 1992) that can be seen in Figure 3. The discontinuity observed in the middle of the distribution can be attributed to several small organizations with unusually high *gh-impact* scores. Facebook (ghi = 147), Mozilla (ghi = 95), and Twitter (ghi = 88) have relatively higher *gh-impact* scores despite having between 250-400 organization members.
 
-![Organization Size and Impact](/media/org_impact-1.png)
+![Organization Size and Impact](/media/influence-on-github/org_impact-1.png)
 
 Figure 3: As organization size grows, impact also grows.
 
@@ -64,7 +61,7 @@ It is commonly believed in academia that some authors use citations strategicall
 
 If giving and receiving were reciprocal, we would expect to find a correlation of 1. Instead, the Pearson’s correlation between stars given and stars received is r = 0.05, (p < 0.01) for Individuals and r = 0.03, (p < 0.01) for Organizations. Since both effects are “smaller than small” (Cohen 1992), there is evidence that starring reciprocity does not exist. In Figure 4, there may be some evidence of reciprocity among Individuals with very little activity because they distribute more stars than they receive. Among Organizations, there is no social reciprocity at any point. Thus, it does not appear that projects are starred for the purpose of social reciprocity.
 
-![Give a Star Get a Star](/media/give_star_get_star-1.png)
+![Give a Star Get a Star](/media/influence-on-github/give_star_get_star-1.png)
 
 Figure 4: A solid black line with slope = 1 represents the perfect reciprocity scenario: each star received would be matched by a star given. Accounts below this line receive more stars than they give.
 
