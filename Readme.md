@@ -5,7 +5,6 @@ gh-impact is a measure of influence on GitHub. gh-impact is based upon the stars
 [http://www.gh-impact.com](http://www.gh-impact.com)
 
 - [about](http://www.gh-impact.com/about/)
-- [report](http://www.gh-impact.com/report/)
-- [questions/answers](http://www.gh-impact.com/answers/)
 - [leader board](http://www.gh-impact.com/leaderboard/)
+- [reports](http://www.gh-impact.com/reports/)
 - [blog](http://www.gh-impact.com/blog/)
