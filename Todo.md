@@ -2,7 +2,6 @@
 
 ## Report
 
-- [x] need to remove deleted accounts
 - [ ] star count for most popular project
 - [ ] organization size, for orgs
 - [ ] average stars
@@ -22,13 +21,6 @@
 
 ## Website
 
-- [x] social buttons on pages
-- [x] group items in media folder by post
-- [x] move quick facts to reports collection
-- [x] new page /reports that lists all reports in order
-- [x] report list uses thumbs and excerpts to build fancy index
-- [x] each report has custom thumbnail
-- [x] sitemap Jekyll plugin
 - [ ] ability to link specific results via social.  how to embed with twitter share actions and cards?  new pages?
 - [ ] site help page, maybe
 - [ ] signup for subscription: google form, analytics event, cgi, other?
@@ -67,3 +59,11 @@
 - [x] measure clicks to github via reports
 - [x] custom twitter cards
 - [x] custom facebook cards
+- [x] social buttons on pages
+- [x] group items in media folder by post
+- [x] move quick facts to reports collection
+- [x] new page /reports that lists all reports in order
+- [x] report list uses thumbs and excerpts to build fancy index
+- [x] each report has custom thumbnail
+- [x] sitemap Jekyll plugin
+- [x] need to remove deleted accounts
