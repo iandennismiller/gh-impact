@@ -1,55 +1,8 @@
 ---
-layout: default
+layout: null
 permalink: /index.html
 ---
 
-<div class="home">
-
-  <div id="search_box">
-    <h2>Enter a GitHub account to learn its <em>gh-impact</em> score</h2>
-
-    <input id="account_name_query" type="text" name="account_name" tabindex="1" autofocus>
-    <a id="search" href="#" tabindex="2">{% include icon-search.svg %}</a>
-  </div>
-
-  <div id="masked">
-
-    <div id="results">
-      <h3><em>gh-impact</em> Report</h3>
-
-      <p>
-        <span class="label">GitHub Profile:</span> <span id="account_name"></span>
-      </p>
-      <p>
-        <span class="label"><em>gh-impact</em> Score:</span> <span id="impact_score"></span>
-      </p>
-      <p>
-        <span class="label">Percentile:</span> <span id="percentile"></span>
-      </p>
-      <p>
-        <span class="label">Account type:</span> <span id="account_type"></span>
-      </p>
-    </div>
-
-    <div id="brief">
-      <p>
-      What does the "<em>gh-impact</em> score" number mean? <a href="/about/">Read more about it here.</a>
-      </p>
-    </div>
-
-    {% include promo-report-1.html %}
-
-  </div>
-
-  <div id="examples">
-    <h3>Example searches</h3>
-    <div id="example_list">
-      <ul></ul>
-    </div>
-  </div>
-
+<div class="home" style="text-align: center;">
+<h1>gh-impact-data</h1>
 </div>
-
-<script>
-$(index_main);
-</script>

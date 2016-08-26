@@ -6,20 +6,17 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: gh-impact
+title: gh-impact-data
 # email: iandennismiller@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   <b>gh-impact</b> is a measure of influence on GitHub.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.gh-impact.com" # the base hostname & protocol for your site
+baseurl: "/gh-impact" # the subpath of your site, e.g. /blog
+url: "http://iandennismiller.github.io" # the base hostname & protocol for your site
 twitter_username: iandennismiller
 # github_username:  iandennismiller
-include: ["_pages", "_html", "_js"]
-exclude: ["CNAME", "new.py", "Readme.md", "Todo.md", "Makefile", "vendor", "Gemfile", "Gemfile.lock"]
+include: ["_html"]
+exclude: ["Readme.md", "Makefile", "vendor", "Gemfile", "Gemfile.lock"]
 permalink: none
 
 # Build settings
 markdown: kramdown
-
-gems:
-  - jekyll-sitemap
